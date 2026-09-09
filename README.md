@@ -47,4 +47,4 @@ bash scripts/restore_data_archives.sh
 python scripts/verify_bundle.py
 ```
 
-推送前需确认远端账户有足够的 LFS 存储/带宽；数据分卷并不会绕过总容量配额。当前没有擅自绑定或推送到任何远端。
+远端仓库已配置 Git LFS；数据分卷不会绕过远端账户的 LFS 存储与带宽配额。
