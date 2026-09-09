@@ -1,0 +1,603 @@
+{
+  "checkpoint": "/home/feng/robot_baselines/results/flowbot3d/training/20260829_012327/final.ckpt",
+  "num_validation_targets": 56,
+  "overall": {
+    "mean_rmse": 0.08730270251232598,
+    "mean_cosine_similarity": 0.9449547976255417,
+    "mean_magnitude_error": 0.05652805540843734
+  },
+  "categories": {
+    "WashingMachine": {
+      "num_targets": 1,
+      "mean_rmse": 0.07496724277734756,
+      "mean_cosine_similarity": 0.9884749054908752,
+      "mean_magnitude_error": 0.03893274441361427
+    },
+    "Refrigerator": {
+      "num_targets": 6,
+      "mean_rmse": 0.05636453069746494,
+      "mean_cosine_similarity": 0.9852760235468546,
+      "mean_magnitude_error": 0.0419751089066267
+    },
+    "Table": {
+      "num_targets": 3,
+      "mean_rmse": 0.6922958965102831,
+      "mean_cosine_similarity": 0.31507911284764606,
+      "mean_magnitude_error": 0.3421594289441903
+    },
+    "StorageFurniture": {
+      "num_targets": 44,
+      "mean_rmse": 0.05177023807879199,
+      "mean_cosine_similarity": 0.9803254563700069,
+      "mean_magnitude_error": 0.04054606663571163
+    },
+    "Microwave": {
+      "num_targets": 2,
+      "mean_rmse": 0.06050937436521053,
+      "mean_cosine_similarity": 0.9688901007175446,
+      "mean_magnitude_error": 0.0321412431076169
+    }
+  },
+  "targets": [
+    {
+      "file": "t0000_r000_103369_link_0.pt",
+      "shape_id": "103369",
+      "link_name": "link_0",
+      "category": "WashingMachine",
+      "target_points": 316,
+      "rmse": 0.07496724277734756,
+      "cosine_similarity": 0.9884749054908752,
+      "magnitude_error": 0.03893274441361427
+    },
+    {
+      "file": "t0001_r000_11712_link_0.pt",
+      "shape_id": "11712",
+      "link_name": "link_0",
+      "category": "Refrigerator",
+      "target_points": 257,
+      "rmse": 0.03621244803071022,
+      "cosine_similarity": 0.9931809306144714,
+      "magnitude_error": 0.022091101855039597
+    },
+    {
+      "file": "t0002_r000_11712_link_1.pt",
+      "shape_id": "11712",
+      "link_name": "link_1",
+      "category": "Refrigerator",
+      "target_points": 802,
+      "rmse": 0.04283170774579048,
+      "cosine_similarity": 0.9723442196846008,
+      "magnitude_error": 0.03744049370288849
+    },
+    {
+      "file": "t0003_r000_12036_link_0.pt",
+      "shape_id": "12036",
+      "link_name": "link_0",
+      "category": "Refrigerator",
+      "target_points": 62,
+      "rmse": 0.08697737753391266,
+      "cosine_similarity": 0.9680387377738953,
+      "magnitude_error": 0.0595741905272007
+    },
+    {
+      "file": "t0004_r000_12036_link_1.pt",
+      "shape_id": "12036",
+      "link_name": "link_1",
+      "category": "Refrigerator",
+      "target_points": 155,
+      "rmse": 0.05243406072258949,
+      "cosine_similarity": 0.9874539971351624,
+      "magnitude_error": 0.04678352177143097
+    },
+    {
+      "file": "t0005_r000_12042_link_1.pt",
+      "shape_id": "12042",
+      "link_name": "link_1",
+      "category": "Refrigerator",
+      "target_points": 585,
+      "rmse": 0.06329040974378586,
+      "cosine_similarity": 0.9968154430389404,
+      "magnitude_error": 0.05217806249856949
+    },
+    {
+      "file": "t0006_r000_12249_link_0.pt",
+      "shape_id": "12249",
+      "link_name": "link_0",
+      "category": "Refrigerator",
+      "target_points": 600,
+      "rmse": 0.056441180408000946,
+      "cosine_similarity": 0.9938228130340576,
+      "magnitude_error": 0.033783283084630966
+    },
+    {
+      "file": "t0007_r000_22433_link_0.pt",
+      "shape_id": "22433",
+      "link_name": "link_0",
+      "category": "Table",
+      "target_points": 1,
+      "rmse": 0.6440142393112183,
+      "cosine_similarity": 0.697797954082489,
+      "magnitude_error": 0.5206490755081177
+    },
+    {
+      "file": "t0008_r000_22433_link_1.pt",
+      "shape_id": "22433",
+      "link_name": "link_1",
+      "category": "Table",
+      "target_points": 4,
+      "rmse": 1.3617368936538696,
+      "cosine_similarity": -0.6921912431716919,
+      "magnitude_error": 0.461239218711853
+    },
+    {
+      "file": "t0009_r000_33810_link_0.pt",
+      "shape_id": "33810",
+      "link_name": "link_0",
+      "category": "Table",
+      "target_points": 28,
+      "rmse": 0.07113655656576157,
+      "cosine_similarity": 0.9396306276321411,
+      "magnitude_error": 0.04458999261260033
+    },
+    {
+      "file": "t0010_r000_41004_link_0.pt",
+      "shape_id": "41004",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 363,
+      "rmse": 0.06816026568412781,
+      "cosine_similarity": 0.9629350304603577,
+      "magnitude_error": 0.03906254842877388
+    },
+    {
+      "file": "t0011_r000_45007_link_1.pt",
+      "shape_id": "45007",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 139,
+      "rmse": 0.044284190982580185,
+      "cosine_similarity": 0.9803808331489563,
+      "magnitude_error": 0.035275109112262726
+    },
+    {
+      "file": "t0012_r000_45130_link_0.pt",
+      "shape_id": "45130",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 778,
+      "rmse": 0.04304974526166916,
+      "cosine_similarity": 0.9842647910118103,
+      "magnitude_error": 0.029769696295261383
+    },
+    {
+      "file": "t0013_r000_45162_link_0.pt",
+      "shape_id": "45162",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 380,
+      "rmse": 0.03999742493033409,
+      "cosine_similarity": 0.9905884861946106,
+      "magnitude_error": 0.034275949001312256
+    },
+    {
+      "file": "t0014_r000_45173_link_0.pt",
+      "shape_id": "45173",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 797,
+      "rmse": 0.10943968594074249,
+      "cosine_similarity": 0.936178982257843,
+      "magnitude_error": 0.086959108710289
+    },
+    {
+      "file": "t0015_r000_45212_link_0.pt",
+      "shape_id": "45212",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 520,
+      "rmse": 0.059979479759931564,
+      "cosine_similarity": 0.9246713519096375,
+      "magnitude_error": 0.03578678146004677
+    },
+    {
+      "file": "t0016_r000_45244_link_0.pt",
+      "shape_id": "45244",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 412,
+      "rmse": 0.02828279510140419,
+      "cosine_similarity": 0.9474750757217407,
+      "magnitude_error": 0.023809926584362984
+    },
+    {
+      "file": "t0017_r000_45249_link_0.pt",
+      "shape_id": "45249",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 451,
+      "rmse": 0.03785740211606026,
+      "cosine_similarity": 0.9947648048400879,
+      "magnitude_error": 0.033208101987838745
+    },
+    {
+      "file": "t0018_r000_45267_link_0.pt",
+      "shape_id": "45267",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 382,
+      "rmse": 0.0637388527393341,
+      "cosine_similarity": 0.9643896818161011,
+      "magnitude_error": 0.04874170944094658
+    },
+    {
+      "file": "t0019_r000_45397_link_1.pt",
+      "shape_id": "45397",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 433,
+      "rmse": 0.03219328075647354,
+      "cosine_similarity": 0.9587949514389038,
+      "magnitude_error": 0.02514558658003807
+    },
+    {
+      "file": "t0020_r000_45504_link_1.pt",
+      "shape_id": "45504",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 364,
+      "rmse": 0.038786645978689194,
+      "cosine_similarity": 0.9933279752731323,
+      "magnitude_error": 0.03313816711306572
+    },
+    {
+      "file": "t0021_r000_45505_link_1.pt",
+      "shape_id": "45505",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 359,
+      "rmse": 0.03452066704630852,
+      "cosine_similarity": 0.967006504535675,
+      "magnitude_error": 0.029099533334374428
+    },
+    {
+      "file": "t0022_r000_45523_link_2.pt",
+      "shape_id": "45523",
+      "link_name": "link_2",
+      "category": "StorageFurniture",
+      "target_points": 345,
+      "rmse": 0.044726260006427765,
+      "cosine_similarity": 0.9746454358100891,
+      "magnitude_error": 0.03644615784287453
+    },
+    {
+      "file": "t0023_r000_45622_link_1.pt",
+      "shape_id": "45622",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 252,
+      "rmse": 0.03022620640695095,
+      "cosine_similarity": 0.9851803779602051,
+      "magnitude_error": 0.025416528806090355
+    },
+    {
+      "file": "t0024_r000_45632_link_1.pt",
+      "shape_id": "45632",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 448,
+      "rmse": 0.03066338039934635,
+      "cosine_similarity": 0.9894383549690247,
+      "magnitude_error": 0.027783691883087158
+    },
+    {
+      "file": "t0025_r000_45645_link_0.pt",
+      "shape_id": "45645",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 587,
+      "rmse": 0.03828006237745285,
+      "cosine_similarity": 0.9846747517585754,
+      "magnitude_error": 0.03417690098285675
+    },
+    {
+      "file": "t0026_r000_45687_link_0.pt",
+      "shape_id": "45687",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 209,
+      "rmse": 0.04236263781785965,
+      "cosine_similarity": 0.9339348673820496,
+      "magnitude_error": 0.03684326633810997
+    },
+    {
+      "file": "t0027_r000_45783_link_0.pt",
+      "shape_id": "45783",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 388,
+      "rmse": 0.05656788498163223,
+      "cosine_similarity": 0.9808947443962097,
+      "magnitude_error": 0.044526536017656326
+    },
+    {
+      "file": "t0028_r000_45853_link_0.pt",
+      "shape_id": "45853",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 111,
+      "rmse": 0.04924255982041359,
+      "cosine_similarity": 0.9985185861587524,
+      "magnitude_error": 0.03677592799067497
+    },
+    {
+      "file": "t0029_r000_45915_link_1.pt",
+      "shape_id": "45915",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 525,
+      "rmse": 0.05787380412220955,
+      "cosine_similarity": 0.9942755103111267,
+      "magnitude_error": 0.04922548681497574
+    },
+    {
+      "file": "t0030_r000_45984_link_0.pt",
+      "shape_id": "45984",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 360,
+      "rmse": 0.03755248337984085,
+      "cosine_similarity": 0.9970118999481201,
+      "magnitude_error": 0.029093516990542412
+    },
+    {
+      "file": "t0031_r000_46166_link_2.pt",
+      "shape_id": "46166",
+      "link_name": "link_2",
+      "category": "StorageFurniture",
+      "target_points": 315,
+      "rmse": 0.09602253884077072,
+      "cosine_similarity": 0.9432712197303772,
+      "magnitude_error": 0.0727941021323204
+    },
+    {
+      "file": "t0032_r000_46199_link_1.pt",
+      "shape_id": "46199",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 132,
+      "rmse": 0.09538307785987854,
+      "cosine_similarity": 0.9880236983299255,
+      "magnitude_error": 0.08136624842882156
+    },
+    {
+      "file": "t0033_r000_46408_link_0.pt",
+      "shape_id": "46408",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 799,
+      "rmse": 0.04877368360757828,
+      "cosine_similarity": 0.9918501377105713,
+      "magnitude_error": 0.037001777440309525
+    },
+    {
+      "file": "t0034_r000_46417_link_0.pt",
+      "shape_id": "46417",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 226,
+      "rmse": 0.05735316500067711,
+      "cosine_similarity": 0.9948837161064148,
+      "magnitude_error": 0.04919925704598427
+    },
+    {
+      "file": "t0035_r000_46616_link_0.pt",
+      "shape_id": "46616",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 659,
+      "rmse": 0.038610078394412994,
+      "cosine_similarity": 0.983493447303772,
+      "magnitude_error": 0.02951076440513134
+    },
+    {
+      "file": "t0036_r000_46700_link_1.pt",
+      "shape_id": "46700",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 107,
+      "rmse": 0.043702609837055206,
+      "cosine_similarity": 0.982884407043457,
+      "magnitude_error": 0.03478275611996651
+    },
+    {
+      "file": "t0037_r000_46732_link_0.pt",
+      "shape_id": "46732",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 102,
+      "rmse": 0.04283830523490906,
+      "cosine_similarity": 0.9881982803344727,
+      "magnitude_error": 0.025634273886680603
+    },
+    {
+      "file": "t0038_r000_46732_link_1.pt",
+      "shape_id": "46732",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 696,
+      "rmse": 0.027728620916604996,
+      "cosine_similarity": 0.9976598620414734,
+      "magnitude_error": 0.025418676435947418
+    },
+    {
+      "file": "t0039_r000_46847_link_0.pt",
+      "shape_id": "46847",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 266,
+      "rmse": 0.05063233524560928,
+      "cosine_similarity": 0.9856473207473755,
+      "magnitude_error": 0.030828332528471947
+    },
+    {
+      "file": "t0040_r000_46856_link_1.pt",
+      "shape_id": "46856",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 61,
+      "rmse": 0.1413213312625885,
+      "cosine_similarity": 0.994563102722168,
+      "magnitude_error": 0.13830697536468506
+    },
+    {
+      "file": "t0041_r000_46859_link_0.pt",
+      "shape_id": "46859",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 73,
+      "rmse": 0.0903296172618866,
+      "cosine_similarity": 0.9924675822257996,
+      "magnitude_error": 0.07288757711648941
+    },
+    {
+      "file": "t0042_r000_47099_link_0.pt",
+      "shape_id": "47099",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 180,
+      "rmse": 0.04717987775802612,
+      "cosine_similarity": 0.9944673180580139,
+      "magnitude_error": 0.04276951029896736
+    },
+    {
+      "file": "t0043_r000_47254_link_0.pt",
+      "shape_id": "47254",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 284,
+      "rmse": 0.043699804693460464,
+      "cosine_similarity": 0.9969844818115234,
+      "magnitude_error": 0.03644808754324913
+    },
+    {
+      "file": "t0044_r000_47514_link_1.pt",
+      "shape_id": "47514",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 267,
+      "rmse": 0.041028957813978195,
+      "cosine_similarity": 0.9945469498634338,
+      "magnitude_error": 0.035453781485557556
+    },
+    {
+      "file": "t0045_r000_47577_link_0.pt",
+      "shape_id": "47577",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 517,
+      "rmse": 0.03651171177625656,
+      "cosine_similarity": 0.9971137642860413,
+      "magnitude_error": 0.0345853827893734
+    },
+    {
+      "file": "t0046_r000_47853_link_0.pt",
+      "shape_id": "47853",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 122,
+      "rmse": 0.04380137845873833,
+      "cosine_similarity": 0.9898134469985962,
+      "magnitude_error": 0.02668197825551033
+    },
+    {
+      "file": "t0047_r000_47853_link_1.pt",
+      "shape_id": "47853",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 274,
+      "rmse": 0.03674137219786644,
+      "cosine_similarity": 0.9918601512908936,
+      "magnitude_error": 0.027191011235117912
+    },
+    {
+      "file": "t0048_r000_47944_link_0.pt",
+      "shape_id": "47944",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 466,
+      "rmse": 0.02759587951004505,
+      "cosine_similarity": 0.9667993783950806,
+      "magnitude_error": 0.022116802632808685
+    },
+    {
+      "file": "t0049_r000_48177_link_0.pt",
+      "shape_id": "48177",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 104,
+      "rmse": 0.061825815588235855,
+      "cosine_similarity": 0.9774290919303894,
+      "magnitude_error": 0.03762096166610718
+    },
+    {
+      "file": "t0050_r000_48513_link_0.pt",
+      "shape_id": "48513",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 254,
+      "rmse": 0.04263564571738243,
+      "cosine_similarity": 0.973943293094635,
+      "magnitude_error": 0.028809329494833946
+    },
+    {
+      "file": "t0051_r000_48797_link_0.pt",
+      "shape_id": "48797",
+      "link_name": "link_0",
+      "category": "StorageFurniture",
+      "target_points": 52,
+      "rmse": 0.06877695024013519,
+      "cosine_similarity": 0.9959602355957031,
+      "magnitude_error": 0.04371051490306854
+    },
+    {
+      "file": "t0052_r000_48797_link_1.pt",
+      "shape_id": "48797",
+      "link_name": "link_1",
+      "category": "StorageFurniture",
+      "target_points": 202,
+      "rmse": 0.059337493032217026,
+      "cosine_similarity": 0.9821856617927551,
+      "magnitude_error": 0.036976348608732224
+    },
+    {
+      "file": "t0053_r000_48855_link_2.pt",
+      "shape_id": "48855",
+      "link_name": "link_2",
+      "category": "StorageFurniture",
+      "target_points": 366,
+      "rmse": 0.048274509608745575,
+      "cosine_similarity": 0.9869205355644226,
+      "magnitude_error": 0.03937225043773651
+    },
+    {
+      "file": "t0054_r000_7167_link_0.pt",
+      "shape_id": "7167",
+      "link_name": "link_0",
+      "category": "Microwave",
+      "target_points": 661,
+      "rmse": 0.05758783593773842,
+      "cosine_similarity": 0.9691508412361145,
+      "magnitude_error": 0.026647383347153664
+    },
+    {
+      "file": "t0055_r000_7366_link_1.pt",
+      "shape_id": "7366",
+      "link_name": "link_1",
+      "category": "Microwave",
+      "target_points": 419,
+      "rmse": 0.06343091279268265,
+      "cosine_similarity": 0.9686293601989746,
+      "magnitude_error": 0.03763510286808014
+    }
+  ]
+}

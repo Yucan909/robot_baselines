@@ -1,0 +1,4 @@
+[
+  {"task": "door_open", "target_index": 21, "trial_index": 8},
+  {"task": "drawer_open", "target_index": 34, "trial_index": 8}
+]

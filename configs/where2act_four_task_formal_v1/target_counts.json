@@ -1,0 +1,20 @@
+{
+  "protocol": "where2act_four_task_formal_v1",
+  "trials_per_target": 20,
+  "targets": {
+    "door_open": 56,
+    "door_close": 56,
+    "drawer_open": 36,
+    "drawer_close": 34
+  },
+  "expected_trials": {
+    "door_open": 1120,
+    "door_close": 1120,
+    "drawer_open": 720,
+    "drawer_close": 680
+  },
+  "expected_total_trials": 3640,
+  "command_directional_progress": 0.4,
+  "primary_success_directional_progress": 0.35,
+  "strict_reached_target_progress": 0.4
+}

@@ -1,0 +1,38 @@
+{
+  "evaluation_unit": "(shape_id, selected_link)",
+  "num_val_shapes": 50,
+  "num_val_targets": 56,
+  "trials_per_target": 20,
+  "target_initial_open_ratio": {
+    "distribution": "uniform",
+    "min": 0.1,
+    "max": 0.2
+  },
+  "success_condition": {
+    "final_open_ratio_at_least": 0.4
+  },
+  "other_joints": "closed",
+  "object_pose": "fixed",
+  "robot_base_pose": "per-target fixed, from base_poses selected_base",
+  "robot_initial_qpos": [
+    0.0,
+    -0.45,
+    0.0,
+    -2.35,
+    0.0,
+    1.9,
+    0.8,
+    0.04,
+    0.04
+  ],
+  "camera": {
+    "view_count": 1,
+    "fixed_per_target": true,
+    "selected_source_repeat": 2,
+    "reason": "repeat_2 exists for all 56 validation targets"
+  },
+  "point_cloud": "single-view only",
+  "max_episode_steps": 150,
+  "max_episode_steps_status": "provisional; validate once with oracle/ground-truth direction before full benchmark",
+  "target_link_information": "target link identity may be provided to the method; for FlowBot3D use it to construct the target-link mask"
+}

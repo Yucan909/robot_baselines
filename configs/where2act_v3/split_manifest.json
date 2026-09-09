@@ -1,0 +1,51 @@
+{
+  "split_version": "where2act_v3_shape_holdout_v1",
+  "seed": 42,
+  "dev_ratio": 0.1,
+  "pose_catalog": "/home/feng/robot_baselines/configs/flowbot3d/eval/eval_pose_catalog.jsonl",
+  "raw_root": "/home/feng/robot_baselines/data/where2act_four_task/door_close/dataset_pc_aff_static/raw/data",
+  "static_root": "/home/feng/robot_baselines/data/where2act_four_task/door_open/dataset_pc_aff_static/episodes",
+  "counts": {
+    "formal_targets": 56,
+    "formal_shapes": 50,
+    "raw_shapes": 240,
+    "static_shapes": 248,
+    "all_dataset_shapes": 248,
+    "nonformal_shapes": 198,
+    "train_shapes": 178,
+    "dev_shapes": 20,
+    "raw_train_shapes": 171,
+    "raw_dev_shapes": 19,
+    "static_train_shapes": 178,
+    "static_dev_shapes": 20
+  },
+  "raw_sample_counts": {
+    "train": 19560,
+    "dev": 2389,
+    "formal": 6780
+  },
+  "static_sample_counts": {
+    "train": 27513,
+    "dev": 2991,
+    "formal": 8905
+  },
+  "shape_set_relationships": {
+    "raw_only_shapes": [],
+    "static_only_shapes": [
+      "41529",
+      "45354",
+      "45693",
+      "45850",
+      "45908",
+      "48243",
+      "9277",
+      "9386"
+    ],
+    "raw_and_static_shapes": 240
+  },
+  "hard_guarantees": {
+    "train_formal_overlap": 0,
+    "dev_formal_overlap": 0,
+    "train_dev_overlap": 0
+  }
+}

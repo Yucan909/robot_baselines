@@ -1,0 +1,150 @@
+{
+  "protocol_name": "PA3FF_PADP_FOURTASK_FORMAL_TRAIN_V1",
+  "frozen_before_any_formal_rollout": true,
+  "paper_facts": {
+    "PA3FF_backbone_frozen": true,
+    "diffusion_target": "clean_action_x0_MSE",
+    "DDPM_training": true,
+    "DDIM_inference": true,
+    "simulation_multitask": true,
+    "paper_unspecified": [
+      "PADP optimizer",
+      "learning rate",
+      "batch size",
+      "scheduler",
+      "exact task sampler"
+    ]
+  },
+  "architecture": {
+    "fourtask_model_source_sha256": "4a18fd9d17724c5394a9e814fdaf3b2ef6de99a9a6decf55f5f5cd27f9d152d6",
+    "part_embedding": "frozen normalized SigLIP 768D used as Transformer CLS",
+    "instruction_embedding": "frozen normalized SigLIP 768D concatenated with global_scene + 9D proprio before existing two-layer MLP",
+    "extra_language_attention_or_projection": false,
+    "diffusion_head": "exact Stage7 ConditionalUnet1D"
+  },
+  "data": {
+    "root": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask",
+    "schema": "pa3ff_padp_demo_v2p1_fixonly_fourtask",
+    "train_rows": {
+      "door_open": 15669,
+      "door_close": 19105,
+      "drawer_open": 13456,
+      "drawer_close": 9074
+    },
+    "total_train_rows": 57304,
+    "train_index_sha256": {
+      "door_open": "caaee7de13e8fb5810ebffee5d474a847a4aa1db8de226f10b1aa507c58d5041",
+      "door_close": "3a2b1a48297646006d984d4e6d846bfc0c9a42013f67671117081643ee8921e9",
+      "drawer_open": "31b2537014dc53980597280e22fb5d329aa441fbaf7e34a810ca8af49f20218b",
+      "drawer_close": "0c21baa2cfd473c308b8b3ef4bd8459e354b252f2e99fb5538402550d7f9bc21"
+    },
+    "action_normalization_sha256": "494d4fbb222d28b8db6e7d38f9f8e70b533f9601db1b0a45ad7b8ca3f824a35e",
+    "normalization": "four-task TRAIN only",
+    "split_change_allowed": false,
+    "formal_final_trajectory_usage": 0
+  },
+  "network_input_contract": {
+    "allow": [
+      "point_cloud_xyz_1024",
+      "initial_robot_proprioception_9d",
+      "task_critical_part_siglip_embedding_768",
+      "task_instruction_siglip_embedding_768"
+    ],
+    "preprocess_only": [
+      "camera_pose_for_normal_orientation_only",
+      "static_path_and_pointcloud_key_for_loading_only"
+    ],
+    "deny": [
+      "target_object_joint_index",
+      "target_joint_index_source",
+      "operation_total_joint_movement",
+      "operation_signed_joint_delta",
+      "result_status",
+      "result_passed",
+      "grasp_gate_pass",
+      "object_qpos",
+      "final_object_qpos",
+      "joint_limits",
+      "success_35",
+      "success_40",
+      "task_progress",
+      "shape",
+      "link",
+      "object_category",
+      "expert_default"
+    ]
+  },
+  "action_diffusion": {
+    "horizon": 16,
+    "action_dim": 10,
+    "action_layout": "relative_xyz_to_obs_centroid_3 + rotation6d_6 + gripper_1",
+    "source_ee_frame": "panda_hand",
+    "target_ee_frame": "panda_grasptarget",
+    "ddpm_train_steps": 100,
+    "ddim_inference_steps": 10,
+    "training_timestep_sampling": "uniform_integer_[0,99]_per_example",
+    "training_noise": "iid_standard_normal",
+    "prediction_type": "x0",
+    "loss": "mean_MSE_over_batch_horizon_action_dims"
+  },
+  "formal_training": {
+    "initialization": "fresh_random_policy_initialization_at_formal_seed",
+    "seed": 20260904,
+    "optimizer": {
+      "type": "AdamW",
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "parameter_group_exceptions": null
+    },
+    "scheduler": "none_constant_lr",
+    "amp": true,
+    "gradient_clipping": null,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 1,
+    "task_sampling": "uniform_over_all_train_rows_via_shuffled_concatenation_no_task_reweighting",
+    "task_sampling_probabilities_implied_by_rows": {
+      "door_open": 0.2734364093257015,
+      "door_close": 0.33339731955884405,
+      "drawer_open": 0.23481781376518218,
+      "drawer_close": 0.15834845735027223
+    },
+    "total_optimizer_updates": 100000,
+    "approx_dataset_equivalent_passes": 6.980315510261064,
+    "checkpoint_every_updates": 10000,
+    "checkpoint_selection": "fixed_final_update_100000",
+    "early_stopping": false,
+    "dev_loss_for_checkpoint_selection": false,
+    "formal_success_for_checkpoint_selection": false,
+    "intermediate_checkpoints": "resume/debug only; never choose by rollout success",
+    "resume_rule": "resume exact optimizer/scaler/RNG and continue toward same 100000-update budget"
+  },
+  "reproduction_choice_rationale": {
+    "optimizer_lr_weight_decay": "closest already-working PADP implementation evidence is Stage7/C1 AdamW(lr=3e-4, weight_decay=1e-4); paper/released PADP source does not specify formal optimizer",
+    "scheduler": "no PADP scheduler evidence; constant LR avoids introducing an unevidenced schedule",
+    "batch_size": "batch=4 already exercised by four-task C1 on the target GPU; conservative fixed choice, not tuned by success",
+    "task_sampling": "uniform over collected TRAIN rows is the default empirical-risk sampling rule and does not introduce task-specific reweighting",
+    "update_budget": "fixed round update budget selected before rollout; with batch=4 it corresponds to about 6.98 passes over 57304 TRAIN rows",
+    "checkpoint_selection": "fixed final update prevents formal/test success or sparse task-specific dev sets from selecting a favorable checkpoint"
+  },
+  "strictly_forbidden_after_freeze": [
+    "change optimizer/lr/batch/scheduler/update budget because rollout success is low/high",
+    "task-specific sampler tuning based on success",
+    "choose an intermediate checkpoint by success@35 or success@40",
+    "change train/dev/final split",
+    "feed GT articulation/progress/result metadata to the network",
+    "train on formal/final trajectories"
+  ],
+  "short_sanity": {
+    "updates": 200,
+    "uses_same_optimizer_batch_sampler_and_model_as_formal": true,
+    "uses_train_only": true,
+    "rollout": false,
+    "checkpoint_candidate": false,
+    "formal_run_starts_fresh_after_sanity": true
+  }
+}

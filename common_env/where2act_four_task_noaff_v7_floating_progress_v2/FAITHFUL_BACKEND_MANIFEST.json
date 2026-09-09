@@ -1,0 +1,56 @@
+{
+  "status": "SUPERSEDED_REFERENCE_ONLY",
+  "applies_to_current_backend": false,
+  "current_protocol_manifest": "backend_v2_protocol.json",
+  "backend": "where2act_backend_faithful_v1",
+  "source_backend": "/home/feng/robot_baselines/common_env/where2act_backend_v2_1_startsync",
+  "destination_backend": "/home/feng/robot_baselines/common_env/where2act_backend_faithful_v1",
+  "scope": "engineering taxonomy only",
+  "method_behavior_changed": false,
+  "policy_changed": false,
+  "observation_changed": false,
+  "physics_changed": false,
+  "planner_algorithm_changed": false,
+  "pull_distance_changed": "superseded: fixed operation distance removed in current progress-targeted protocol",
+  "patched_files": {
+    "run_trial.py": "c645f5fe799c196cc5374efd3a1fe0e4fdc6a69822e87d2cd10c5cbb65d81693",
+    "where2act_runtime.py": "9a9213fbd882acf5efac3e457f4f590aec72e5b966e1353587d7eb9461e17c57"
+  },
+  "unchanged_core": {
+    "where2act_policy.py": {
+      "source_sha256": "86df1f8753eaca831498ce0f132d98e279d7e0837af0cba29051091e6f6c8825",
+      "dest_sha256": "86df1f8753eaca831498ce0f132d98e279d7e0837af0cba29051091e6f6c8825",
+      "identical": true
+    },
+    "where2act_observation_adapter.py": {
+      "source_sha256": "5ecf00caff6d817a87e7c5de0f89bc7ab4e5d0f4db50277dc3883af860898d06",
+      "dest_sha256": "5ecf00caff6d817a87e7c5de0f89bc7ab4e5d0f4db50277dc3883af860898d06",
+      "identical": true
+    },
+    "backend_v2_physics.py": {
+      "source_sha256": "194deccd75b152093ceb3cfa79d8a93b217f29c2d7ae2ff9c9ba2f532857eadf",
+      "dest_sha256": "194deccd75b152093ceb3cfa79d8a93b217f29c2d7ae2ff9c9ba2f532857eadf",
+      "identical": true
+    },
+    "panda_controller.py": {
+      "source_sha256": "2a10c9238f375a79f952de0c1fb4fd011c69919a0f713c12cc082860b8f14397",
+      "dest_sha256": "2a10c9238f375a79f952de0c1fb4fd011c69919a0f713c12cc082860b8f14397",
+      "identical": true
+    },
+    "contact_monitor.py": {
+      "source_sha256": "0232cee1e2c8073e6e5562c606d8bda24d18dadfbddbcccc01c82aff48bacd4f",
+      "dest_sha256": "0232cee1e2c8073e6e5562c606d8bda24d18dadfbddbcccc01c82aff48bacd4f",
+      "identical": true
+    },
+    "motion_planner_collision_worker.py": {
+      "source_sha256": "5d6080905649e82d94765f057af8325fe1666f72182c2fba06fc05625a0ac3df",
+      "dest_sha256": "5d6080905649e82d94765f057af8325fe1666f72182c2fba06fc05625a0ac3df",
+      "identical": true
+    },
+    "motion_planner_worker.py": {
+      "source_sha256": "68af0ad1a4eed11dd73b54db4515bca7998ed421264c19d2d213f41447e10273",
+      "dest_sha256": "68af0ad1a4eed11dd73b54db4515bca7998ed421264c19d2d213f41447e10273",
+      "identical": true
+    }
+  }
+}

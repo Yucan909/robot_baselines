@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "total": 32,
+  "expected": 32,
+  "drawer_open": {
+    "complete": 32,
+    "grasp_success": 11,
+    "reached_target_35": 7,
+    "reached_target_40": 7,
+    "reached_target_35_rate": 0.21875
+  }
+}

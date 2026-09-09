@@ -1,0 +1,52 @@
+[project]
+name = "rpad-core"
+version = "0.1.0"
+description = "A Python Package Template"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE.txt" }
+authors = [{ email = "baeisner@andrew.cmu.edu", name = "Ben Eisner" }]
+dependencies = ["numpy", "pandas", "tqdm", "typer"]
+
+[build-system]
+requires = ["setuptools >= 62.3.2", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+develop = [
+    "pytest",
+    "black >= 24.10.0",
+    "isort",
+    "mypy >= 1.0",
+    "pylint",
+    "autoflake",
+    "pre-commit",
+    "jupyterlab",
+    "types-tqdm",
+    "pandas-stubs",
+]
+build_docs = ["mkdocs-material", "mkdocstrings[python]"]
+
+# This is required to allow us to have notebooks/ at the top level.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rpad = ["py.typed"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+warn_return_any = true
+warn_unused_configs = true
+mypy_path = "src"
+namespace_packages = true
+explicit_package_bases = true
+
+# # Uncomment this when you have imports for mypy to ignore.
+# [[tool.mypy.overrides]]
+# module = [
+# ]
+# ignore_missing_imports = true

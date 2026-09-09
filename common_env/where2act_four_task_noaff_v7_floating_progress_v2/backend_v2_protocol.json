@@ -1,0 +1,47 @@
+{
+  "protocol_version": "where2act_four_task_noaff_v7_floating_progress_v2",
+  "backend_version": "where2act_floating_gripper_progress_targeted_20260905_v2",
+  "scope": "corrected absolute-progress four-task baseline",
+  "controlled_against": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001",
+  "method_core": {
+    "Where2Act_policy_modified": false,
+    "observation_adapter_modified": false,
+    "interaction_point_source": "Where2Act V7 actionability",
+    "interaction_orientation_source": "Where2Act V7 Actor plus Critic",
+    "target_seed_checkpoint_catalogs_same_as_previous_formal": true,
+    "fixed_operation_distance_removed": true
+  },
+  "execution_condition": {
+    "robot": "official Where2Act six-DoF floating Panda two-finger gripper",
+    "urdf": "/home/feng/robot_baselines/repos/where2act/code/robots/panda_gripper.urdf",
+    "full_arm_present": false,
+    "inverse_kinematics": false,
+    "motion_planning": false,
+    "observation_before_gripper_spawn": true,
+    "pregrasp": "network hand pose minus 5cm along predicted approach axis",
+    "approach": "original-style floating Cartesian 5cm",
+    "operation": "repeat 1cm physical segments along -predicted_d1 for Pull or +predicted_d1 for Push until absolute progress target, contact loss, stall, or 40cm safety cap"
+  },
+  "physical_contact": {
+    "finger_stiffness": 200.0,
+    "finger_damping": 60.0,
+    "static_friction": 4.0,
+    "dynamic_friction": 4.0,
+    "restitution": 0.01,
+    "suction": false,
+    "finger_contact_weld": false,
+    "gripper_object_weld": false
+  },
+  "success_contract": {
+    "pull_grasp_success": "stable bilateral physical finger-target contact",
+    "push_grasp_success": "pre-operation closed-gripper target engagement/contact",
+    "open_command_final_progress": 0.40,
+    "open_success_final_progress": 0.35,
+    "close_command_final_progress": 0.10,
+    "close_success_final_progress": 0.15,
+    "primary_metric": "final_operation_success / total_trials",
+    "reached_target_40_metric": false,
+    "reach_35_diagnostic_metric": "ungated final-state reach / total_trials: Open final_progress>=0.35; Close final_progress<=0.15",
+    "reach_35_is_primary_success": false
+  }
+}

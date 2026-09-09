@@ -1,0 +1,154 @@
+{
+  "best_epoch": 9,
+  "best_dev_total_loss": 0.39032113494709375,
+  "formal_overlap": 0,
+  "train_stats": {
+    "total_converted": 39120,
+    "original": 19560,
+    "neg_direction": 19560,
+    "positive": 19560,
+    "negative": 19560,
+    "unique_shapes": 171
+  },
+  "dev_stats": {
+    "total_converted": 4778,
+    "original": 2389,
+    "neg_direction": 2389,
+    "positive": 2389,
+    "negative": 2389,
+    "unique_shapes": 19
+  },
+  "final_dev_repeats": [
+    {
+      "total_loss": 0.3870065709807574,
+      "critic_loss": 0.019778233123026116,
+      "actor_positive_rad": 0.35620599797376784,
+      "actor_positive_deg": 20.409100321142454,
+      "action_score_loss": 0.00011022340835420591,
+      "converted_binary": {
+        "n": 4778,
+        "positive": 2389,
+        "negative": 2389,
+        "bce": 0.01977824567857768,
+        "auc": 0.9990439472389936,
+        "balanced_accuracy": 0.9968606111343659,
+        "positive_recall": 0.9974884889074926,
+        "negative_specificity": 0.996232733361239,
+        "p_positive": 0.9953242035343838,
+        "p_negative": 0.012520401038906608
+      },
+      "original_binary": {
+        "n": 2389,
+        "positive": 2389,
+        "negative": 0,
+        "bce": 0.015407344739795333,
+        "auc": NaN,
+        "balanced_accuracy": NaN,
+        "positive_recall": 0.9974884889074926,
+        "negative_specificity": NaN,
+        "p_positive": 0.9953242035343838,
+        "p_negative": null
+      },
+      "neg_direction_binary": {
+        "n": 2389,
+        "positive": 0,
+        "negative": 2389,
+        "bce": 0.02414914661736003,
+        "auc": NaN,
+        "balanced_accuracy": NaN,
+        "positive_recall": NaN,
+        "negative_specificity": 0.996232733361239,
+        "p_positive": null,
+        "p_negative": 0.012520401038906608
+      }
+    },
+    {
+      "total_loss": 0.3850933864569255,
+      "critic_loss": 0.019778233123026116,
+      "actor_positive_rad": 0.3544795542718377,
+      "actor_positive_deg": 20.31018238345491,
+      "action_score_loss": 0.00010835599214157793,
+      "converted_binary": {
+        "n": 4778,
+        "positive": 2389,
+        "negative": 2389,
+        "bce": 0.01977824567857768,
+        "auc": 0.9990439472389936,
+        "balanced_accuracy": 0.9968606111343659,
+        "positive_recall": 0.9974884889074926,
+        "negative_specificity": 0.996232733361239,
+        "p_positive": 0.9953242035343838,
+        "p_negative": 0.012520401038906608
+      },
+      "original_binary": {
+        "n": 2389,
+        "positive": 2389,
+        "negative": 0,
+        "bce": 0.015407344739795333,
+        "auc": NaN,
+        "balanced_accuracy": NaN,
+        "positive_recall": 0.9974884889074926,
+        "negative_specificity": NaN,
+        "p_positive": 0.9953242035343838,
+        "p_negative": null
+      },
+      "neg_direction_binary": {
+        "n": 2389,
+        "positive": 0,
+        "negative": 2389,
+        "bce": 0.02414914661736003,
+        "auc": NaN,
+        "balanced_accuracy": NaN,
+        "positive_recall": NaN,
+        "negative_specificity": 0.996232733361239,
+        "p_positive": null,
+        "p_negative": 0.012520401038906608
+      }
+    },
+    {
+      "total_loss": 0.39092035614680726,
+      "critic_loss": 0.019778233123026116,
+      "actor_positive_rad": 0.3604789441314987,
+      "actor_positive_deg": 20.65392210206707,
+      "action_score_loss": 0.00010663178783974512,
+      "converted_binary": {
+        "n": 4778,
+        "positive": 2389,
+        "negative": 2389,
+        "bce": 0.01977824567857768,
+        "auc": 0.9990439472389936,
+        "balanced_accuracy": 0.9968606111343659,
+        "positive_recall": 0.9974884889074926,
+        "negative_specificity": 0.996232733361239,
+        "p_positive": 0.9953242035343838,
+        "p_negative": 0.012520401038906608
+      },
+      "original_binary": {
+        "n": 2389,
+        "positive": 2389,
+        "negative": 0,
+        "bce": 0.015407344739795333,
+        "auc": NaN,
+        "balanced_accuracy": NaN,
+        "positive_recall": 0.9974884889074926,
+        "negative_specificity": NaN,
+        "p_positive": 0.9953242035343838,
+        "p_negative": null
+      },
+      "neg_direction_binary": {
+        "n": 2389,
+        "positive": 0,
+        "negative": 2389,
+        "bce": 0.02414914661736003,
+        "auc": NaN,
+        "balanced_accuracy": NaN,
+        "positive_recall": NaN,
+        "negative_specificity": 0.996232733361239,
+        "p_positive": null,
+        "p_negative": 0.012520401038906608
+      }
+    }
+  ],
+  "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_close/joint/best-network.pth",
+  "checkpoint_sha256": "cc6951931acde4b371657412c983767a341e4aeef49e39a3af1e220fd21a3f49"
+}

@@ -1,0 +1,61 @@
+{
+  "best_epoch": 1,
+  "best_dev_bce": 0.3730464094344034,
+  "formal_overlap": 0,
+  "train_stats": {
+    "total_converted": 39120,
+    "original": 19560,
+    "neg_direction": 19560,
+    "positive": 16063,
+    "negative": 23057,
+    "unique_shapes": 171
+  },
+  "dev_stats": {
+    "total_converted": 4778,
+    "original": 2389,
+    "neg_direction": 2389,
+    "positive": 1947,
+    "negative": 2831,
+    "unique_shapes": 19
+  },
+  "final_dev": {
+    "converted_all": {
+      "n": 4778,
+      "positive": 1947,
+      "negative": 2831,
+      "bce": 0.3730464094344034,
+      "auc": 0.9087382212887365,
+      "balanced_accuracy": 0.8369748711755189,
+      "positive_recall": 0.8664612223934258,
+      "negative_specificity": 0.8074885199576122,
+      "p_positive": 0.7824939718176338,
+      "p_negative": 0.20889909206853793
+    },
+    "original": {
+      "n": 2389,
+      "positive": 1947,
+      "negative": 442,
+      "bce": 0.5641445418568237,
+      "auc": 0.5971979167392926,
+      "balanced_accuracy": 0.5542713351786134,
+      "positive_recall": 0.8664612223934258,
+      "negative_specificity": 0.2420814479638009,
+      "p_positive": 0.7824939718176338,
+      "p_negative": 0.6838053865284486
+    },
+    "neg_direction": {
+      "n": 2389,
+      "positive": 0,
+      "negative": 2389,
+      "bce": 0.18194827701198313,
+      "auc": NaN,
+      "balanced_accuracy": NaN,
+      "positive_recall": NaN,
+      "negative_specificity": 0.9120971117622436,
+      "p_positive": null,
+      "p_negative": 0.12103446998763358
+    }
+  },
+  "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_open/critic/best-network.pth",
+  "checkpoint_sha256": "c9c4237bb403069d5665f5930ed2c543933f913ceb8a94c98ce80ac4a00f8621"
+}

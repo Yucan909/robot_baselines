@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "catalog": "/home/feng/robot_baselines/configs/pa3ff/reproduction_v1_formal/formal_episode_catalog.jsonl",
+  "catalog_sha256": "68e185cd17dbbb1a169588b218b18b9b78300fd3c196cb72e4d3747b8f3acf19",
+  "formal_seeds": [
+    2026082900,
+    2026082901,
+    2026082902,
+    2026082903,
+    2026082904,
+    2026082905,
+    2026082906,
+    2026082907,
+    2026082908,
+    2026082909,
+    2026082910,
+    2026082911,
+    2026082912,
+    2026082913,
+    2026082914,
+    2026082915,
+    2026082916,
+    2026082917,
+    2026082918,
+    2026082919
+  ],
+  "target_counts": {
+    "door_open": 56,
+    "door_close": 56,
+    "drawer_open": 36,
+    "drawer_close": 34
+  },
+  "episode_counts": {
+    "door_open": 1120,
+    "door_close": 1120,
+    "drawer_open": 720,
+    "drawer_close": 680
+  },
+  "total_episodes": 3640,
+  "camera_sources": {
+    "door_open_formal_pose_catalog": 1120,
+    "door_close_formal_pose_catalog": 1120,
+    "paired_drawer_close_canonical_camera_fallback": 86,
+    "paired_drawer_close_scene": 304,
+    "paired_drawer_close_scene_exact_candidate": 330,
+    "own_drawer_close_scene": 680
+  },
+  "scene_metadata_whitelist": [
+    "base_pose",
+    "observation_camera_pose",
+    "initial_object_qpos"
+  ],
+  "trajectory_fields_never_read": [
+    "actions",
+    "grasp/contact points",
+    "affordance",
+    "success/passed/status",
+    "final_object_qpos"
+  ],
+  "articulation_pairing_forbidden_and_checked": true
+}

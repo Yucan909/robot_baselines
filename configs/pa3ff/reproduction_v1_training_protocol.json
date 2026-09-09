@@ -1,0 +1,130 @@
+{
+  "protocol_name": "PA3FF_REPRODUCTION_V1_TRAINING",
+  "frozen_before_any_formal_rollout": true,
+  "method": {
+    "representation": "official PA3FF architecture and released representation code; frozen Sonata backbone; frozen 10000-step PA3FF instance head",
+    "padp": "paper-equivalent local reconstruction because PADP training/inference source was not released",
+    "point_conditioning": "1024 object points -> frozen PA3FF 768D point features -> 4-layer Transformer with frozen normalized SigLIP part CLS token",
+    "task_conditioning": "frozen normalized SigLIP instruction embedding plus 9D robot proprioception",
+    "action_policy": "Diffusion-Policy-style conditional 1D U-Net, H=16, A=10, DDPM training and DDIM inference",
+    "loss": "clean-action x0 mean squared error"
+  },
+  "data": {
+    "root": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask",
+    "schema": "pa3ff_padp_demo_v2p1_fixonly_fourtask",
+    "split": "object-level; TRAIN, DEV, and global formal object unions are pairwise disjoint; global formal objects are excluded from every TRAIN and DEV task",
+    "train_object_counts": {
+      "door_open": 167,
+      "door_close": 169,
+      "drawer_open": 64,
+      "drawer_close": 61
+    },
+    "dev_object_counts": {
+      "door_open": 17,
+      "door_close": 18,
+      "drawer_open": 2,
+      "drawer_close": 1
+    },
+    "train_rows": {
+      "door_open": 15669,
+      "door_close": 19105,
+      "drawer_open": 13456,
+      "drawer_close": 9074
+    },
+    "train_index_sha256": {
+      "door_open": "caaee7de13e8fb5810ebffee5d474a847a4aa1db8de226f10b1aa507c58d5041",
+      "door_close": "3a2b1a48297646006d984d4e6d846bfc0c9a42013f67671117081643ee8921e9",
+      "drawer_open": "31b2537014dc53980597280e22fb5d329aa441fbaf7e34a810ca8af49f20218b",
+      "drawer_close": "0c21baa2cfd473c308b8b3ef4bd8459e354b252f2e99fb5538402550d7f9bc21"
+    },
+    "dev_rows": {
+      "door_open": 1863,
+      "door_close": 2242,
+      "drawer_open": 157,
+      "drawer_close": 30
+    },
+    "dev_index_sha256": {
+      "door_open": "1fbf5cb5f515f16cbba1ad7db65206b8462c29e39e8be5851b209627847d1bdf",
+      "door_close": "2c3416a4e2a2453b65cf86862b4ffc689574f50287c849950b6d0ad598f7c373",
+      "drawer_open": "a259007f31d7f9df0c9a183f1f3cc99604d210ebba0e0a71b78dcf3354bf60e1",
+      "drawer_close": "0e82a6cc0c6fb917c0430fbe08030f8a6fe6fd12f49bf6e33d27518419bd11a5"
+    },
+    "action_normalization_sha256": "494d4fbb222d28b8db6e7d38f9f8e70b533f9601db1b0a45ad7b8ca3f824a35e",
+    "normalization": "four-task TRAIN only",
+    "affordance_fields_used": false,
+    "formal_or_test_action_fields_used": false
+  },
+  "network_input_contract": {
+    "allow": [
+      "point_cloud_xyz_1024",
+      "initial_robot_proprioception_9d",
+      "task_critical_part_siglip_embedding_768",
+      "task_instruction_siglip_embedding_768"
+    ],
+    "preprocess_only": [
+      "camera_pose_for_normal_orientation_only",
+      "static_path_and_pointcloud_key_for_loading_only"
+    ],
+    "deny": [
+      "formal_or_test_operation_point",
+      "formal_or_test_contact_point",
+      "formal_or_test_local_link_grasp_translation",
+      "formal_or_test_successful_trajectory",
+      "formal_or_test_action_direction",
+      "success_or_passed_label",
+      "affordance",
+      "final_object_qpos",
+      "target_joint_or_progress_as_network_input"
+    ]
+  },
+  "action_diffusion": {
+    "horizon": 16,
+    "action_dim": 10,
+    "action_layout": "relative_xyz_to_obs_centroid_3 + rotation6d_6 + gripper_1",
+    "source_ee_frame": "panda_hand",
+    "target_ee_frame": "panda_grasptarget",
+    "ddpm_train_steps": 100,
+    "ddim_inference_steps": 10,
+    "prediction_type": "x0",
+    "loss": "mean_MSE_over_batch_horizon_action_dims"
+  },
+  "short_sanity": {
+    "updates": 1000,
+    "starts_fresh": true,
+    "checkpoint_candidate": false,
+    "rollout_or_dev_usage": false
+  },
+  "formal_training": {
+    "initialization": "fresh_random_policy_initialization_at_formal_seed",
+    "seed": 20260904,
+    "optimizer": {
+      "type": "AdamW",
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "betas": [0.9, 0.999],
+      "eps": 1e-8
+    },
+    "scheduler": "none_constant_lr",
+    "amp": true,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 1,
+    "task_sampling": "uniform_over_all_train_rows_via_shuffled_concatenation_no_task_reweighting",
+    "total_optimizer_updates": 30000,
+    "checkpoint_every_updates": 5000,
+    "checkpoint_selection": "lowest deterministic DEV x0 MSE among steps 10000, 15000, 20000, 25000, 30000; tie selects earlier step",
+    "early_stopping": false,
+    "formal_success_for_checkpoint_selection": false,
+    "resume_rule": "resume exact optimizer/scaler/RNG only from this run"
+  },
+  "dev_selection": {
+    "uses_success_or_rollout": false,
+    "fixed_before_training": true,
+    "examples_per_task": 30,
+    "selection_seed": 20260904,
+    "diffusion_timestep_and_noise_seed": 20260904,
+    "metric": "clean-action x0 MSE",
+    "candidate_steps": [10000, 15000, 20000, 25000, 30000]
+  },
+  "paper_training_volume": "not specified as a reproducible PADP optimizer-step count in released material; historical local protocol budget was 100000 optimizer updates",
+  "budget_rationale": "30000 updates is 30% of the historical 100000-update plan and is sufficient for a converged comparison baseline; selection is DEV-only and occurs before formal rollout"
+}

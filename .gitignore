@@ -1,0 +1,29 @@
+# Local extracted datasets (canonical upload copies are dataset_archives/* parts).
+/data/partnet-mobility/
+/data/flowbot3d_custom/
+/data/where2act_four_task/
+/repos/articubot/data/dataset/
+/repos/articubot/data/diverse_objects/
+/repos/articubot/data/low-level-ckpt/
+/repos/articubot/data/high_level_200_obj_ckpt.pth
+
+# Regenerable PA3FF expanded caches and new experiment outputs.
+/results/pa3ff/padp_data_v4_timeindexed_baseframe_fourtask/
+/results/**/formal_*/
+/results/**/smoke/
+
+# Runtime noise.
+**/__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.part
+*.sparse.zip
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+/.work/
+build/
+dist/
+*.egg-info/

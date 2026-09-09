@@ -1,0 +1,217 @@
+{
+  "backend_hashes": {
+    "aggregate_four_task_formal.py": "8cf52ca69a9055a7ffb5dc9bf201ab23c0f930ce649e55e133f9934081c94987",
+    "backend_v2_physics.py": "194deccd75b152093ceb3cfa79d8a93b217f29c2d7ae2ff9c9ba2f532857eadf",
+    "backend_v2_protocol.json": "91329fd3d0c5148c79e04fc885fd1153ee61235ea82a7d3866031eabbae190e9",
+    "build_formal_scene_catalogs.py": "8ce8a644a4054891cc3b55330ef10cad0a56a956f4438f9bc5a11737ab941ab8",
+    "contact_monitor.py": "02f16fab195654947666c6df14b380429ff19128b8ff7237607d766c48490a2c",
+    "formal_protocol.py": "c0340e3df38eb59b91505ceaf243fe4db01bbf67babdd6c1e76013cd647e2b7d",
+    "grasp_pose_adapter.py": "67784088c4d054576a1c53ac20c4289651c7f3bccef42fb8e9751184f65f1bb3",
+    "motion_planner_collision_worker.py": "a1a18052c0063d1cf452be13fc08caa7ca2271748fe0f3e2f8902c41aa720f25",
+    "motion_planner_request_worker.py": "414133d012dda5e7bac2ec4f29ab4b3c1154e34d6bf7bef8ecf48ee88abab876",
+    "motion_planner_worker.py": "68af0ad1a4eed11dd73b54db4515bca7998ed421264c19d2d213f41447e10273",
+    "panda_controller.py": "2a10c9238f375a79f952de0c1fb4fd011c69919a0f713c12cc082860b8f14397",
+    "prepare_formal_protocol.py": "daaca90e8ee64d9e818ec5467db20260b7d54fc04206222e6ac22491ee895b85",
+    "run_four_task_formal.py": "40e4eb3519f39c09aee8d34bdb2c75c6be06c30858dd6c25c5b20418fee33549",
+    "run_trial.py": "96e37e476755ae725f7bb7902de27bfab6bf21bce4ca590b4807361f7a80be0c",
+    "where2act_observation_adapter.py": "5ecf00caff6d817a87e7c5de0f89bc7ab4e5d0f4db50277dc3883af860898d06",
+    "where2act_policy.py": "86df1f8753eaca831498ce0f132d98e279d7e0837af0cba29051091e6f6c8825",
+    "where2act_runtime.py": "c052b592a3229a765a1c73405e3036b109cc0e65422674bc566a3893c56258d4"
+  },
+  "backend_root": "/home/feng/robot_baselines/common_env/where2act_four_task_noaff_v7_formal",
+  "engineering_schema_notes": [
+    "Episodes with target_not_visible terminate before policy construction; they retain the frozen checkpoint path/SHA, network_trained=false, and count once as model_no_valid_action without retry."
+  ],
+  "expected_total_trials": 3640,
+  "external_artifact_hashes": {
+    "/home/feng/robot_baselines/common_env/assets/panda_articubot/panda.urdf": "0f989e1e04ce34c5a5abee58f3f683ea8861a459248bbd6bb64e39ced8ba61d0",
+    "/home/feng/robot_baselines/repos/where2act/code/models/model_3d.py": "968165b68fa9933553497f884f37f484a4f78d70bd647b5c4ff890f0427de5c2",
+    "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/TRAINING_MANIFEST.json": "7b3e7acbab6da8884bdd28f28a03a00634dd8f3343f16c2fd4fa3f355e52eaf4",
+    "/home/feng/robot_baselines/results/where2act/FAITHFUL_FREEZE_MANIFEST.json": "c9317ca9a929110dfd348f5f7c79a3ede192f5f233477d872c8896a33c518df5",
+    "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/formal_catalogs/SCENE_CATALOG_MANIFEST.json": "9bc5a8c7159f3fc53ddae92a57a3c4272b1c7d9a509f76f2ba11e9be96f98b3d",
+    "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/INDEX_MANIFEST.json": "cac514dbff53c3f4c257ba40ad41a1d8687493d707bab305c93c4e23b71af46f",
+    "/home/feng/下载/where2act_noaff_v7_schema_robust_build_and_train.sh": "c4a83b472302f3f86ca9978da24af76435d5c982a3377a8b84c67bd8f3538a7f",
+    "/home/feng/下载/where2act_noaff_v7_schema_robust_build_and_train/build_four_task_indices_v7_noaff_schema_robust.py": "e33b1afe8a34d57fec5cabbb7f71fe9b68937b7fe2b5e826b584243c217e6de1"
+  },
+  "formal_result_root": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001",
+  "frozen_utc": "2026-09-05T01:26:39.207210+00:00",
+  "parallel_workers": 8,
+  "protocol": "where2act_four_task_noaff_v7_formal_v1",
+  "scene_catalog_manifest": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/formal_catalogs/SCENE_CATALOG_MANIFEST.json",
+  "scene_catalog_manifest_sha256": "9bc5a8c7159f3fc53ddae92a57a3c4272b1c7d9a509f76f2ba11e9be96f98b3d",
+  "scene_metadata_allowlist": [
+    "base_pose",
+    "camera_pose",
+    "camera_pose_world",
+    "initial_camera_pose",
+    "initial_object_qpos",
+    "observation_camera_pose"
+  ],
+  "scientific_contract": {
+    "articulation_state_pairing_allowed": false,
+    "camera_pairing_allowed_only_when_native_missing": true,
+    "close_directional_progress": "initial_progress - final_progress",
+    "command_progress_target": 0.4,
+    "final_success": "grasp_success AND directional_task_progress >= 0.35",
+    "formal_trajectory_contact_or_action_given_to_policy": false,
+    "hard_target_skips": false,
+    "open_directional_progress": "final_progress - initial_progress",
+    "operation_distance_m": 0.05,
+    "policy_selects_contact_and_action_from_observation": true,
+    "post_grasp_operation_success_rate": "final_success / grasp_success",
+    "primary_success_threshold": 0.35,
+    "pull_direction": "-predicted_d1",
+    "pull_grasp_success": "real stable bilateral two-finger grasp",
+    "push_direction": "+predicted_d1",
+    "push_does_not_require_pull_style_enclosing_grasp": true,
+    "push_grasp_success": "pre-operation closed-gripper target engagement/contact",
+    "reached_target_40_threshold": 0.4,
+    "resume_incomplete_same_seed": true,
+    "retry_policy_failure_until_success": false,
+    "target_link_identity_use": "environment, faithful candidate mask, contact and physics scoring",
+    "training_affordance_fields_used": false
+  },
+  "smoke_root": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/smoke",
+  "status": "FROZEN",
+  "task_execution_order": [
+    "door_open",
+    "door_close",
+    "drawer_open",
+    "drawer_close"
+  ],
+  "tasks": {
+    "door_close": {
+      "camera_sources": {
+        "own_explicit": 56
+      },
+      "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_close/joint/best-network.pth",
+      "checkpoint_load_verification": {
+        "device": "cpu",
+        "missing_keys": [],
+        "parameter_count": 1032969,
+        "strict": true,
+        "unexpected_keys": []
+      },
+      "checkpoint_sha256": "cc6951931acde4b371657412c983767a341e4aeef49e39a3af1e220fd21a3f49",
+      "critic_checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_close/critic/best-network.pth",
+      "critic_checkpoint_sha256": "b2b7c94f61059038d0d8eae924f9321d66a220be56071c4c58159400bbaa5b54",
+      "formal_catalog": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/formal_catalogs/door_close_formal_scene_catalog.jsonl",
+      "formal_catalog_sha256": "e83568ee395d505c9368abae662f1c114df219d8dc5c4e7207d4c48f33f0d5a4",
+      "goal": "close",
+      "primitive": "push",
+      "source_target_catalog": "/home/feng/robot_baselines/configs/where2act_four_task_formal_v1/door_close_targets.jsonl",
+      "source_target_catalog_sha256": "1d624fcd2e436613edfc05e509cff105a0e2fca6b20e8165860f9eedbaf17367",
+      "targets": 56,
+      "training_index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/door_close_index_v7_noaff_schema_robust.npz",
+      "training_index_sha256": "58589594c2b1f83d189ce5dd112dd9e53ba33df49dc371553e2125abbf1d98e7",
+      "trials": 1120
+    },
+    "door_open": {
+      "camera_sources": {
+        "native_formal_door_open_pose_package": 56
+      },
+      "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_open/joint/best-network.pth",
+      "checkpoint_load_verification": {
+        "device": "cpu",
+        "missing_keys": [],
+        "parameter_count": 1032969,
+        "strict": true,
+        "unexpected_keys": []
+      },
+      "checkpoint_sha256": "2378ebe1962869984173e4cd839b4ed1763ea1c4f30de8693227ac4037c21f67",
+      "critic_checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_open/critic/best-network.pth",
+      "critic_checkpoint_sha256": "c9c4237bb403069d5665f5930ed2c543933f913ceb8a94c98ce80ac4a00f8621",
+      "formal_catalog": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/formal_catalogs/door_open_formal_scene_catalog.jsonl",
+      "formal_catalog_sha256": "2c0e0e67b5b9a1ce392b92698e9942eea5854ca3f2a28872f03c7f8e49908853",
+      "goal": "open",
+      "primitive": "pull",
+      "source_target_catalog": "/home/feng/robot_baselines/configs/where2act_four_task_formal_v1/door_open_targets.jsonl",
+      "source_target_catalog_sha256": "4b6aac92ca3b43582504719c8090cba7730b4d3122d0d3795dc8a250689c3aad",
+      "targets": 56,
+      "training_index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/door_open_index_v7_noaff_schema_robust.npz",
+      "training_index_sha256": "74f231c434b64cf246c41f3374463495f4cbece6c30839ce1e3be7c459032d00",
+      "trials": 1120
+    },
+    "drawer_close": {
+      "camera_sources": {
+        "own_explicit": 34
+      },
+      "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_close/joint/best-network.pth",
+      "checkpoint_load_verification": {
+        "device": "cpu",
+        "missing_keys": [],
+        "parameter_count": 1032969,
+        "strict": true,
+        "unexpected_keys": []
+      },
+      "checkpoint_sha256": "b6af721bddfa6488ec599fc467d9a0f1c4225e62dc9b03d167d6b3b59c364352",
+      "critic_checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_close/critic/best-network.pth",
+      "critic_checkpoint_sha256": "ab28695efc9a50ac016d61eefa77542034567a929f4619d7c4b3d64c976527a4",
+      "formal_catalog": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/formal_catalogs/drawer_close_formal_scene_catalog.jsonl",
+      "formal_catalog_sha256": "bfe438416309dcfc4fe53e55f617a28af34ee7f62ad06bcb26ee164ae34ab637",
+      "goal": "close",
+      "primitive": "push",
+      "source_target_catalog": "/home/feng/robot_baselines/configs/where2act_four_task_formal_v1/drawer_close_targets.jsonl",
+      "source_target_catalog_sha256": "0516550b8c8b16c84abc34506687dd34eac0d3ab5b47b93c1d728083404e4061",
+      "targets": 34,
+      "training_index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/drawer_close_index_v7_noaff_schema_robust.npz",
+      "training_index_sha256": "bc2833e1af7f4aef520ed61bad4938a0d8ec67201fc91a2a284bc75d64261db4",
+      "trials": 680
+    },
+    "drawer_open": {
+      "camera_sources": {
+        "paired_drawer_close_scene": 33,
+        "unique_close_train_camera_id:fixed_front_single_view": 3
+      },
+      "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_open/joint/best-network.pth",
+      "checkpoint_load_verification": {
+        "device": "cpu",
+        "missing_keys": [],
+        "parameter_count": 1032969,
+        "strict": true,
+        "unexpected_keys": []
+      },
+      "checkpoint_sha256": "f6e39663b1e13a205e90fbd4e40d6de1e1ce4ccee4c99781027cdb69636ca9c9",
+      "critic_checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_open/critic/best-network.pth",
+      "critic_checkpoint_sha256": "8f112c8f398c9ad8c7628b9b2623cec8a0e3384629bf5b5e0c79aaecaf01975b",
+      "formal_catalog": "/home/feng/robot_baselines/results/where2act/four_task_noaff_v7_formal/20260905_082001/formal_catalogs/drawer_open_formal_scene_catalog.jsonl",
+      "formal_catalog_sha256": "97219032ec4c835eaa4f55d927c63c63b080fef39f7099f9f0955c63b4a1c177",
+      "goal": "open",
+      "primitive": "pull",
+      "source_target_catalog": "/home/feng/robot_baselines/configs/where2act_four_task_formal_v1/drawer_open_targets.jsonl",
+      "source_target_catalog_sha256": "2da54701d5b0ff20ef1c72ed0b89252ecd3b83f26519a4d693ffa5de496f49cf",
+      "targets": 36,
+      "training_index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/drawer_open_index_v7_noaff_schema_robust.npz",
+      "training_index_sha256": "999d4cdbfa03bf3fea8897726e32e3e9fb860fe187adf9e06c656ab7203c4b67",
+      "trials": 720
+    }
+  },
+  "training_manifest": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/TRAINING_MANIFEST.json",
+  "training_manifest_sha256": "7b3e7acbab6da8884bdd28f28a03a00634dd8f3343f16c2fd4fa3f355e52eaf4",
+  "trial_seed_source": "/home/feng/robot_baselines/results/where2act/FAITHFUL_FREEZE_MANIFEST.json",
+  "trial_seed_source_sha256": "c9317ca9a929110dfd348f5f7c79a3ede192f5f233477d872c8896a33c518df5",
+  "trial_seeds": [
+    2026082900,
+    2026082901,
+    2026082902,
+    2026082903,
+    2026082904,
+    2026082905,
+    2026082906,
+    2026082907,
+    2026082908,
+    2026082909,
+    2026082910,
+    2026082911,
+    2026082912,
+    2026082913,
+    2026082914,
+    2026082915,
+    2026082916,
+    2026082917,
+    2026082918,
+    2026082919
+  ],
+  "trials_per_target": 20,
+  "v7_run_root": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913"
+}

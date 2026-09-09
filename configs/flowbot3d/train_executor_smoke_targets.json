@@ -1,0 +1,42 @@
+[
+  {
+    "shape_id": "9277",
+    "link_name": "link_2",
+    "category": "Door",
+    "joint_name": "joint_2",
+    "joint_type": "revolute",
+    "n_selected_links_in_shape": 1
+  },
+  {
+    "shape_id": "7263",
+    "link_name": "link_0",
+    "category": "Microwave",
+    "joint_name": "joint_0",
+    "joint_type": "revolute",
+    "n_selected_links_in_shape": 1
+  },
+  {
+    "shape_id": "10627",
+    "link_name": "link_1",
+    "category": "Refrigerator",
+    "joint_name": "joint_1",
+    "joint_type": "revolute",
+    "n_selected_links_in_shape": 2
+  },
+  {
+    "shape_id": "9386",
+    "link_name": "link_1",
+    "category": "Door",
+    "joint_name": "joint_1",
+    "joint_type": "revolute",
+    "n_selected_links_in_shape": 1
+  },
+  {
+    "shape_id": "7273",
+    "link_name": "link_0",
+    "category": "Microwave",
+    "joint_name": "joint_0",
+    "joint_type": "revolute",
+    "n_selected_links_in_shape": 1
+  }
+]

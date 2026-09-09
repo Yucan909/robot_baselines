@@ -1,0 +1,101 @@
+{
+  "protocol_name": "PA3FF_REPRODUCTION_V2_INITIAL_STATE_ALIGNED_EXTENSION",
+  "frozen_before_v2_training": true,
+  "frozen_before_v2_formal_rollout": true,
+  "change_control": {
+    "reason": "V1 DEV diagnostics found a pre-action robot-state contract mismatch and non-converged high-noise x0 prediction",
+    "formal_success_target_used": false,
+    "formal_success_used_for_checkpoint_selection": false,
+    "formal_or_test_trajectory_fields_used": false,
+    "task_specific_success_tuning": false,
+    "method_structure_changed": false,
+    "loss_changed": false,
+    "action_representation_changed": false
+  },
+  "method": {
+    "representation": "official PA3FF architecture and released representation code; frozen Sonata backbone; frozen 10000-step PA3FF instance head",
+    "padp": "paper-equivalent local reconstruction because PADP training/inference source was not released",
+    "point_conditioning": "1024 object points -> frozen PA3FF 768D point features -> 4-layer Transformer with frozen normalized SigLIP part CLS token",
+    "task_conditioning": "frozen normalized SigLIP instruction embedding plus 9D current pre-action robot proprioception",
+    "action_policy": "Diffusion-Policy-style conditional 1D U-Net, H=16, A=10, DDPM training and DDIM inference",
+    "loss": "clean-action x0 mean squared error"
+  },
+  "data": {
+    "root": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask",
+    "schema": "pa3ff_padp_demo_v3_initial_state_aligned_fourtask",
+    "adapter_change": "only initial_robot_proprioception changed to frozen pre-action HOME qpos; every point-cloud, action, camera, split, and supervision array is unchanged",
+    "adapter_manifest_sha256": "3659e29fab7a957f1f691f4456704b092a8c1a4c2b6522777b97c5bcbcfa8ae2",
+    "split": "object-level; TRAIN, DEV, and global formal object unions are pairwise disjoint; global formal objects are excluded from every TRAIN and DEV task",
+    "train_object_counts": {"door_open": 167, "door_close": 169, "drawer_open": 64, "drawer_close": 61},
+    "dev_object_counts": {"door_open": 17, "door_close": 18, "drawer_open": 2, "drawer_close": 1},
+    "train_rows": {"door_open": 15669, "door_close": 19105, "drawer_open": 13456, "drawer_close": 9074},
+    "dev_rows": {"door_open": 1863, "door_close": 2242, "drawer_open": 157, "drawer_close": 30},
+    "train_index_sha256": {
+      "door_open": "287544e5d23acd72261a761947204a4278d56ebbf85fb025b6f3212aebcde058",
+      "door_close": "efa4237510946c0df75d05dc12c61555e5c0d4c28aca848f258c4ee5d45e03f9",
+      "drawer_open": "6350156cb70109b6f919bf64b5333c1ef7a960ed672513073d1104cc48efca2d",
+      "drawer_close": "1752713f5480411fec084044614787ba711f8995f167847ade3ea67096569aa1"
+    },
+    "dev_index_sha256": {
+      "door_open": "9ba986914fea9110817f2af5ec829304cf03ddc5342d032d8f7aa7acbcdbe2be",
+      "door_close": "244c1ddce7c6920f2c5a928358e04dd857ba45880aa52fb8e3620d8a84df2342",
+      "drawer_open": "386c17352303c501df74264b33b7cfc5d8d34f2c350c18d179d3402697580bbd",
+      "drawer_close": "8db178527af9c03f8fab0e9ed1c65253c1f19b571c843dd51c2463cef74c24fc"
+    },
+    "action_normalization_sha256": "494d4fbb222d28b8db6e7d38f9f8e70b533f9601db1b0a45ad7b8ca3f824a35e",
+    "normalization": "unchanged four-task TRAIN-only V1 normalization",
+    "pre_action_home_qpos": [0.0, -0.45, 0.0, -2.35, 0.0, 1.9, 0.8, 0.04, 0.04],
+    "affordance_fields_used": false,
+    "formal_or_test_action_fields_used": false
+  },
+  "network_input_contract": {
+    "allow": ["point_cloud_xyz_1024", "initial_robot_proprioception_9d", "task_critical_part_siglip_embedding_768", "task_instruction_siglip_embedding_768"],
+    "deny": ["formal_or_test_operation_point", "formal_or_test_contact_point", "formal_or_test_local_link_grasp_translation", "formal_or_test_successful_trajectory", "formal_or_test_action_direction", "success_or_passed_label", "affordance", "final_object_qpos", "target_joint_or_progress_as_network_input"]
+  },
+  "action_diffusion": {
+    "horizon": 16,
+    "action_dim": 10,
+    "action_layout": "relative_xyz_to_obs_centroid_3 + rotation6d_6 + gripper_1",
+    "source_ee_frame": "panda_hand",
+    "target_ee_frame": "panda_grasptarget",
+    "ddpm_train_steps": 100,
+    "ddim_inference_steps": 10,
+    "prediction_type": "x0",
+    "loss": "mean_MSE_over_batch_horizon_action_dims"
+  },
+  "formal_training": {
+    "initialization": "exact continuation from V1 step030000 with optimizer, scaler, row stream, and RNG; then train on V3 aligned conditioning",
+    "parent_checkpoint": "/home/feng/robot_baselines/results/pa3ff/reproduction_v1/training_30000/checkpoints/step030000.pt",
+    "parent_checkpoint_sha256": "19b473a480d670f9fa67a66e4130da39d1f2b198daa6f501223cb53b8bffe653",
+    "seed": 20260904,
+    "optimizer": {"type": "AdamW", "lr": 0.0003, "weight_decay": 0.0001, "betas": [0.9, 0.999], "eps": 1e-8},
+    "scheduler": "none_constant_lr",
+    "amp": true,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 1,
+    "task_sampling": "uniform_over_all_train_rows_via_shuffled_concatenation_no_task_reweighting",
+    "parent_optimizer_updates": 30000,
+    "additional_optimizer_updates": 20000,
+    "total_optimizer_updates": 50000,
+    "checkpoint_every_updates": 5000,
+    "candidate_steps": [30000, 35000, 40000, 45000, 50000],
+    "early_stopping": false,
+    "formal_success_for_checkpoint_selection": false,
+    "resume_rule": "first start accepts only exact frozen V1 parent; subsequent resume accepts exact V2 optimizer/scaler/RNG checkpoint"
+  },
+  "dev_selection": {
+    "fixed_before_v2_training": true,
+    "uses_success_or_rollout": false,
+    "examples_per_task": 30,
+    "selection_seed": 20260904,
+    "noise_seed": 20260904,
+    "high_noise_timesteps": [75, 90, 95, 99],
+    "primary_metric": "mean clean-action x0 normalized MSE over the fixed DEV examples and high-noise timesteps 75,90,95,99",
+    "secondary_metrics": ["uniform-timestep clean-action x0 MSE", "first-pose translation error", "full trajectory translation RMSE"],
+    "candidate_steps": [30000, 35000, 40000, 45000, 50000],
+    "tie_rule": "select earlier optimizer step",
+    "rationale": "DDIM inference starts at t=99; the V1 aggregate metric hid much larger t>=75 error while step030000 DEV was still improving"
+  },
+  "paper_training_volume": "the released material does not specify a reproducible PADP optimizer-step count; historical local plan was 100000 updates",
+  "budget_rationale": "50000 total updates is the user-approved reasonable 30k-50k ceiling; the extra 20k is selected from TRAIN/DEV convergence only"
+}

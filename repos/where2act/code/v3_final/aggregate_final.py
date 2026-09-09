@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import argparse,json
+from collections import Counter
+from pathlib import Path
+import numpy as np
+HOME=Path.home(); DEFAULT=HOME/'robot_baselines/results/where2act/FINAL_ATOMIC_1120'
+def stats(x):
+ a=np.asarray([v for v in x if v is not None and np.isfinite(v)],np.float64)
+ return None if not len(a) else {'n':len(a),'mean':float(a.mean()),'median':float(np.median(a)),'p10':float(np.quantile(a,.1)),'p90':float(np.quantile(a,.9)),'min':float(a.min()),'max':float(a.max())}
+def main():
+ ap=argparse.ArgumentParser(); ap.add_argument('--root',default=str(DEFAULT)); ap.add_argument('--expected',type=int,default=1120); a=ap.parse_args(); root=Path(a.root).resolve(); files=sorted([p for p in root.rglob('result.json') if p.parent.name.startswith('seed_')]); R=[]
+ for p in files:
+  try: R.append(json.loads(p.read_text()))
+  except: pass
+ n=len(R); ng=sum(bool(x.get('grasp_success')) for x in R); nf=sum(bool(x.get('final_success')) for x in R); impl=sum(bool(x.get('implementation_error')) for x in R); reasons=Counter(str(x.get('failure_reason')) for x in R); fp=lambda x: float(x['final_progress']) if x.get('final_progress') is not None else None; th={}
+ for t in [.20,.25,.30,.40]:
+  ca=sum(fp(x) is not None and fp(x)>=t for x in R); cg=sum(bool(x.get('grasp_success')) and fp(x) is not None and fp(x)>=t for x in R); th[f'{int(t*100)}pct']={'end_to_end_count':ca,'end_to_end_rate':ca/a.expected,'post_grasp_count':cg,'post_grasp_rate':cg/ng if ng else None}
+ pg=[x for x in R if bool(x.get('grasp_success'))]; allfp=[fp(x) for x in R if fp(x) is not None]; pgfp=[fp(x) for x in pg if fp(x) is not None]; delta=[float(x['delta_progress']) for x in pg if x.get('delta_progress') is not None]; angle=[float(x['pull_angle_to_oracle_deg']) for x in R if x.get('pull_angle_to_oracle_deg') is not None]; pga=[float(x['pull_angle_to_oracle_deg']) for x in pg if x.get('pull_angle_to_oracle_deg') is not None]; dist=[float(x['actual_pull_distance']) for x in pg if x.get('actual_pull_distance') is not None]; bins={};
+ for name,(lo,hi) in {'<30':(0,30),'30-60':(30,60),'60-90':(60,90),'90-120':(90,120),'>=120':(120,181)}.items():
+  G=[x for x in R if x.get('pull_angle_to_oracle_deg') is not None and lo<=float(x['pull_angle_to_oracle_deg'])<hi]; GG=[x for x in G if bool(x.get('grasp_success'))]; ds=[float(x['delta_progress']) for x in GG if x.get('delta_progress') is not None]; bins[name]={'n':len(G),'grasp_success':sum(bool(x.get('grasp_success')) for x in G),'grasp_rate':sum(bool(x.get('grasp_success')) for x in G)/len(G) if G else None,'post_grasp_delta_progress':stats(ds),'final_success':sum(bool(x.get('final_success')) for x in G)}
+ s={'method':'Where2Act-Final-Atomic','protocol_version':'where2act_final_atomic_v1','expected_trials':a.expected,'completed_result_files':n,'missing_trials':max(a.expected-n,0),'implementation_errors':impl,'grasp_success_trials':ng,'grasp_success_rate':ng/a.expected,'final_success_trials':nf,'post_grasp_operation_success_rate':nf/ng if ng else None,'final_success_rate':nf/a.expected,'thresholds':th,'failure_reasons':dict(reasons),'all_final_progress':stats(allfp),'post_grasp_final_progress':stats(pgfp),'post_grasp_delta_progress':stats(delta),'post_grasp_positive_delta_count':sum(v>0 for v in delta),'post_grasp_positive_delta_fraction':sum(v>0 for v in delta)/len(delta) if delta else None,'pull_angle_to_oracle_all':stats(angle),'pull_angle_to_oracle_post_grasp':stats(pga),'actual_pull_distance_post_grasp':stats(dist),'angle_bins':bins}; (root/'summary.json').write_text(json.dumps(s,indent=2)+'\n')
+ lines=['='*108,'WHERE2ACT FINAL ATOMIC 1120 SUMMARY','='*108,f'completed / expected                   : {n} / {a.expected}',f'implementation errors                  : {impl}',f'grasp success                          : {ng} / {a.expected} = {ng/a.expected:.6f}',f'final success                          : {nf} / {a.expected} = {nf/a.expected:.6f}',f"post-grasp operation success           : {nf} / {ng} = {(nf/ng if ng else float('nan')):.6f}",'','LOWER OPENING THRESHOLDS']
+ for k,v in th.items(): lines.append(f"{k:<8s} e2e={v['end_to_end_count']:4d}/{a.expected} ({v['end_to_end_rate']:.6f}) | post-grasp={v['post_grasp_count']:4d}/{ng} ({v['post_grasp_rate'] if v['post_grasp_rate'] is not None else float('nan'):.6f})")
+ lines+=['','PROGRESS',f"all final progress                       : {s['all_final_progress']}",f"post-grasp final progress                : {s['post_grasp_final_progress']}",f"post-grasp delta progress                : {s['post_grasp_delta_progress']}",f"positive delta fraction                  : {s['post_grasp_positive_delta_fraction']}",'','ANGLE DIAGNOSTICS',f"all pull angle                           : {s['pull_angle_to_oracle_all']}",f"post-grasp pull angle                    : {s['pull_angle_to_oracle_post_grasp']}"]+[f'  {k:<8s}: {v}' for k,v in bins.items()]+['','FAILURE REASONS']+[f'  {k:<45s}: {v}' for k,v in reasons.most_common()]; (root/'summary.txt').write_text('\n'.join(lines)+'\n'); print((root/'summary.txt').read_text())
+if __name__=='__main__': main()

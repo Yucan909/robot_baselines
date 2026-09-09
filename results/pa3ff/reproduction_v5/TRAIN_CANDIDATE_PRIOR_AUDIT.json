@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "scope": "V4 object-level TRAIN actions only",
+  "formal_or_dev_actions_used": false,
+  "definition": "first panda_grasptarget position median and max(1.4826*MAD, 0.04m)",
+  "tasks": {
+    "door_open": {
+      "train_source_actions": 15669,
+      "median_base_m": [
+        0.5227882862091064,
+        -0.0004688137851189822,
+        0.6220953464508057
+      ],
+      "robust_scale_base_m": [
+        0.05110984944105148,
+        0.10905046574224833,
+        0.23425900708436964
+      ]
+    },
+    "door_close": {
+      "train_source_actions": 19105,
+      "median_base_m": [
+        0.40494242310523987,
+        0.03857371583580971,
+        0.5807345509529114
+      ],
+      "robust_scale_base_m": [
+        0.10034285590052604,
+        0.27725086553022266,
+        0.22277746642827986
+      ]
+    },
+    "drawer_open": {
+      "train_source_actions": 13456,
+      "median_base_m": [
+        0.5941073894500732,
+        0.00269166671205312,
+        0.6782575845718384
+      ],
+      "robust_scale_base_m": [
+        0.09560777860879897,
+        0.12936930718794465,
+        0.14285926800370216
+      ]
+    },
+    "drawer_close": {
+      "train_source_actions": 9074,
+      "median_base_m": [
+        0.44879870116710663,
+        0.035135313868522644,
+        0.5652216076850891
+      ],
+      "robust_scale_base_m": [
+        0.1125759600073099,
+        0.16406388878971337,
+        0.08940302240252494
+      ]
+    }
+  }
+}

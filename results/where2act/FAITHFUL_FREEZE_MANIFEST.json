@@ -1,0 +1,82 @@
+{
+  "protocol_version": "where2act_faithful_baseline_v1",
+  "method": "Where2Act",
+  "shared_benchmark": "twofinger_physical_v1",
+  "formal_targets": 56,
+  "trials_per_target": 20,
+  "expected_trials": 1120,
+  "trial_seeds": [
+    2026082900,
+    2026082901,
+    2026082902,
+    2026082903,
+    2026082904,
+    2026082905,
+    2026082906,
+    2026082907,
+    2026082908,
+    2026082909,
+    2026082910,
+    2026082911,
+    2026082912,
+    2026082913,
+    2026082914,
+    2026082915,
+    2026082916,
+    2026082917,
+    2026082918,
+    2026082919
+  ],
+  "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/where2act_faithful_joint/best-network.pth",
+  "checkpoint_sha256": "f7f6eb5f17df5b86f5172b3252db6dca29d19cd440633c0d17f064368b51f020",
+  "corrected_index": "/home/feng/robot_baselines/results/where2act/v3_data/corrected_opening_index_v3_critic.npz",
+  "corrected_index_sha256": "d0106fedc278663cd9f3cd33726b76278242cf1e2efc1e8484c2a4afcd418fe1",
+  "backend": "/home/feng/robot_baselines/common_env/where2act_backend_faithful_v1",
+  "backend_hashes": {
+    "run_trial.py": "c645f5fe799c196cc5374efd3a1fe0e4fdc6a69822e87d2cd10c5cbb65d81693",
+    "where2act_policy.py": "86df1f8753eaca831498ce0f132d98e279d7e0837af0cba29051091e6f6c8825",
+    "where2act_runtime.py": "9a9213fbd882acf5efac3e457f4f590aec72e5b966e1353587d7eb9461e17c57",
+    "where2act_observation_adapter.py": "5ecf00caff6d817a87e7c5de0f89bc7ab4e5d0f4db50277dc3883af860898d06",
+    "backend_v2_physics.py": "194deccd75b152093ceb3cfa79d8a93b217f29c2d7ae2ff9c9ba2f532857eadf",
+    "panda_controller.py": "2a10c9238f375a79f952de0c1fb4fd011c69919a0f713c12cc082860b8f14397",
+    "contact_monitor.py": "0232cee1e2c8073e6e5562c606d8bda24d18dadfbddbcccc01c82aff48bacd4f",
+    "motion_planner_collision_worker.py": "5d6080905649e82d94765f057af8325fe1666f72182c2fba06fc05625a0ac3df",
+    "motion_planner_worker.py": "68af0ad1a4eed11dd73b54db4515bca7998ed421264c19d2d213f41447e10273"
+  },
+  "eval_catalog": "/home/feng/robot_baselines/configs/flowbot3d/eval/eval_pose_catalog.jsonl",
+  "eval_catalog_sha256": "04a4eae7982d55fc202f3c7de34c2e5d3f29d1b100633c8294f7ef8a775274bd",
+  "split_hashes": {
+    "train_shapes.txt": "651401a635fa3c6701827e3b0cb8f559b7e43018fcd6ba2f2d0a2cb32b51de75",
+    "dev_shapes.txt": "bac2a5f1affb75635da3f7b3dec7b6d69ebcc7e67d745e2c3bb479a598ef369a",
+    "formal_holdout_shapes.txt": "2b2816516585cfc989350023415350a341240a83b151b8f096350d0f0b60fc01",
+    "split_manifest.json": "b6a171bc93ff8d817f7579ed39500cd0d1cbb48a176f4452fc77760fd3d62da4"
+  },
+  "smoke_summary": {
+    "scope": "nonformal_engineering_smoke_only",
+    "expected_trials": 20,
+    "result_files": 20,
+    "missing_results": 0,
+    "subprocess_nonzero": 0,
+    "implementation_errors": 0,
+    "wrong_checkpoint_results": 0,
+    "network_trained_true": 20,
+    "observation_success": 20,
+    "policy_success": 20,
+    "planning_success": 0,
+    "pregrasp_execution_success": 0,
+    "grasp_success": 0,
+    "final_success": 0,
+    "failure_reasons": {
+      "planning_failed": 20
+    },
+    "engineering_smoke_pass": true
+  },
+  "formal_used_for_tuning": false,
+  "method_level_posthoc_modifications": false,
+  "notes": [
+    "Where2Act policy/actionability/Actor/Critic behavior frozen before formal.",
+    "Shared physical backend unchanged except engineering failure taxonomy.",
+    "Planning failure is counted as a method failure.",
+    "No automatic retry of method failures."
+  ]
+}

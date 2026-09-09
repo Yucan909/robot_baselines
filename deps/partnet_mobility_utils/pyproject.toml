@@ -1,0 +1,58 @@
+[project]
+name = "rpad-partnet-mobility-utils"
+version = "0.1.0"
+description = "Partnet-Mobility Utils"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE.txt" }
+authors = [{ email = "baeisner@andrew.cmu.edu", name = "Ben Eisner" }]
+dependencies = [
+  "numpy",
+  "rpad-core @ git+https://github.com/r-pad/core.git",
+  "rpad-pybullet-libs @ git+https://github.com/r-pad/pybullet_libs.git",
+  "scipy",
+  "trimesh",
+  "typer",
+]
+
+[build-system]
+requires = ["setuptools >= 62.3.2,<63", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+develop = [
+  "pytest",
+  "black >= 23.0",
+  "isort",
+  "mypy >= 1.0",
+  "pylint",
+  "autoflake",
+  "pre-commit",
+  "jupyterlab",
+]
+build_docs = ["mkdocs-material", "mkdocstrings[python]"]
+pybullet = ["wheel", "pybullet"]
+sapien = ["sapien"]
+notebooks = ["rpad-visualize-3d @ git+https://github.com/r-pad/visualize_3d"]
+
+# Make setuptools only look in the src folder.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rpad = ["py.typed"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+warn_return_any = true
+warn_unused_configs = true
+mypy_path = "src"
+namespace_packages = true
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = ["pybullet.*", "pybullet_data.*", "trimesh.*", "scipy.*", "sapien.*"]
+ignore_missing_imports = true

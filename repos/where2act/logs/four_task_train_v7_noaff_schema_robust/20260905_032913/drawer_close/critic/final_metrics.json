@@ -1,0 +1,61 @@
+{
+  "best_epoch": 1,
+  "best_dev_bce": 0.01515283914699676,
+  "formal_overlap": 0,
+  "train_stats": {
+    "total_converted": 17372,
+    "original": 8686,
+    "neg_direction": 8686,
+    "positive": 8686,
+    "negative": 8686,
+    "unique_shapes": 59
+  },
+  "dev_stats": {
+    "total_converted": 1498,
+    "original": 749,
+    "neg_direction": 749,
+    "positive": 749,
+    "negative": 749,
+    "unique_shapes": 7
+  },
+  "final_dev": {
+    "converted_all": {
+      "n": 1498,
+      "positive": 749,
+      "negative": 749,
+      "bce": 0.01515283914699676,
+      "auc": 0.9999358289913922,
+      "balanced_accuracy": 0.9919893190921228,
+      "positive_recall": 0.9919893190921228,
+      "negative_specificity": 0.9919893190921228,
+      "p_positive": 0.9929519730193592,
+      "p_negative": 0.0117096040551445
+    },
+    "original": {
+      "n": 749,
+      "positive": 749,
+      "negative": 0,
+      "bce": 0.01067544251225476,
+      "auc": NaN,
+      "balanced_accuracy": NaN,
+      "positive_recall": 0.9919893190921228,
+      "negative_specificity": NaN,
+      "p_positive": 0.9929519730193592,
+      "p_negative": null
+    },
+    "neg_direction": {
+      "n": 749,
+      "positive": 0,
+      "negative": 749,
+      "bce": 0.01963023578173876,
+      "auc": NaN,
+      "balanced_accuracy": NaN,
+      "positive_recall": NaN,
+      "negative_specificity": 0.9919893190921228,
+      "p_positive": null,
+      "p_negative": 0.0117096040551445
+    }
+  },
+  "checkpoint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_close/critic/best-network.pth",
+  "checkpoint_sha256": "ab28695efc9a50ac016d61eefa77542034567a929f4619d7c4b3d64c976527a4"
+}

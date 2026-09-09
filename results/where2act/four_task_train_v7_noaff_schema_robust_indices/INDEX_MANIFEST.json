@@ -1,0 +1,224 @@
+{
+  "door_open": {
+    "path": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/door_open_index_v7_noaff_schema_robust.npz",
+    "sha256": "74f231c434b64cf246c41f3374463495f4cbece6c30839ce1e3be7c459032d00",
+    "rows": 21949,
+    "split": {
+      "dev": 2389,
+      "train": 19560
+    },
+    "source_labels": {
+      "False": 3939,
+      "True": 18010
+    },
+    "point_count": [
+      8192
+    ],
+    "label_semantics": [
+      "trajectory_grasp_gate_pass"
+    ],
+    "camera_source": {
+      "own_explicit:initial_camera_pose+close_pair_matched": 21943,
+      "own_explicit:initial_camera_pose+close_pair_diff_diagnostic": 6
+    },
+    "scene_source": {
+      "exact_same_candidate_close_raw:base_pose": 21949
+    },
+    "nearest_distance_m": {
+      "mean": 0.08394402265548706,
+      "median": 0.07653701305389404,
+      "p90": 0.10214921832084656,
+      "p99": 0.44572696208953866,
+      "max": 0.66089928150177
+    }
+  },
+  "door_close": {
+    "path": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/door_close_index_v7_noaff_schema_robust.npz",
+    "sha256": "58589594c2b1f83d189ce5dd112dd9e53ba33df49dc371553e2125abbf1d98e7",
+    "rows": 21949,
+    "split": {
+      "dev": 2389,
+      "train": 19560
+    },
+    "source_labels": {
+      "True": 21949
+    },
+    "point_count": [
+      1024
+    ],
+    "label_semantics": [
+      "trajectory_passed_task_success"
+    ],
+    "camera_source": {
+      "own_explicit:observation_camera_pose": 21949
+    },
+    "scene_source": {
+      "own_explicit:base_pose": 21949
+    },
+    "nearest_distance_m": {
+      "mean": 0.05389885604381561,
+      "median": 0.03997072950005531,
+      "p90": 0.07944071441888811,
+      "p99": 0.4347597837448125,
+      "max": 0.9491066336631775
+    }
+  },
+  "drawer_open": {
+    "path": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/drawer_open_index_v7_noaff_schema_robust.npz",
+    "sha256": "999d4cdbfa03bf3fea8897726e32e3e9fb860fe187adf9e06c656ab7203c4b67",
+    "rows": 14138,
+    "split": {
+      "dev": 709,
+      "train": 13429
+    },
+    "source_labels": {
+      "True": 14138
+    },
+    "point_count": [
+      8192
+    ],
+    "label_semantics": [
+      "trajectory_passed_task_success"
+    ],
+    "camera_source": {
+      "exact_same_candidate_close_counterpart": 7639,
+      "same_scene_close_counterpart": 5422,
+      "unique_close_train_camera_id:fixed_front_single_view": 1077
+    },
+    "scene_source": {
+      "own_explicit+close_scene_matched:base_pose": 13061,
+      "own_explicit:base_pose": 1077
+    },
+    "nearest_distance_m": {
+      "mean": 0.08930112421512604,
+      "median": 0.08220352977514267,
+      "p90": 0.12238960564136506,
+      "p99": 0.15577828332781787,
+      "max": 0.2070167362689972
+    }
+  },
+  "drawer_close": {
+    "path": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/drawer_close_index_v7_noaff_schema_robust.npz",
+    "sha256": "bc2833e1af7f4aef520ed61bad4938a0d8ec67201fc91a2a284bc75d64261db4",
+    "rows": 9435,
+    "split": {
+      "dev": 749,
+      "train": 8686
+    },
+    "source_labels": {
+      "True": 9435
+    },
+    "point_count": [
+      8192
+    ],
+    "label_semantics": [
+      "trajectory_passed_task_success"
+    ],
+    "camera_source": {
+      "own_explicit+close_scene_matched:observation_camera_pose": 9435
+    },
+    "scene_source": {
+      "own_explicit+close_scene_matched:base_pose": 9435
+    },
+    "nearest_distance_m": {
+      "mean": 0.09981285035610199,
+      "median": 0.07674536854028702,
+      "p90": 0.2292442321777344,
+      "p99": 0.36255502820014923,
+      "max": 0.4754388630390167
+    }
+  },
+  "schema": "where2act_four_task_train_index_v7_noaff_schema_robust",
+  "contact_point_contract": "trajectory local operation point -> exact articulation-state transform -> nearest finite observed point",
+  "door_open_observation_state": "paired reverse trajectory q_final -> own Door Open static point cloud",
+  "door_close_observation_state": "latest nonfuture raw observation at operation_start_index",
+  "drawer_observation_state": "object_qpos[initial_trajectory_step]",
+  "drawer_camera_contract": "own explicit camera is authoritative for its own point cloud; Open/Close counterpart is diagnostic when both exist and fallback only when own camera is absent; then uniquely resolved native camera_id camera-only fallback; otherwise hard fail",
+  "door_camera_pair_diagnostics": {
+    "explicit_pair_matched": 21943,
+    "explicit_pair_different": 6
+  },
+  "door_base_pair_diagnostics": {},
+  "task_mode_schema_diagnostics": {
+    "door_open": {},
+    "door_close": {
+      "raw:door_close": 21949,
+      "semantic:close": 21949
+    },
+    "drawer_open": {
+      "raw:open": 14147,
+      "semantic:open": 14147
+    },
+    "drawer_close": {
+      "raw:door_close": 9435,
+      "semantic:close": 9435
+    }
+  },
+  "status_schema_diagnostics": {
+    "door_open": {},
+    "door_close": {
+      "raw:success": 21949
+    },
+    "drawer_open": {
+      "raw:success": 14138
+    },
+    "drawer_close": {
+      "raw:success": 9435
+    }
+  },
+  "drawer_scene_contract": "own base_pose -> verify against exact/scene Close counterpart when available -> same scene (shape,link,repeat,base) Close fallback only; never copied across scenes",
+  "geometry_filter_applied": false,
+  "geometry_diagnostics_only": true,
+  "drawer_camera_train_dictionary_rows": {
+    "fixed_front_single_view": 9435
+  },
+  "drawer_camera_id": "fixed_front_single_view",
+  "drawer_native_split_counts": {
+    "drawer_open": {
+      "native_train": 70,
+      "internal_train": 63,
+      "internal_dev": 7,
+      "native_val_formal": 19
+    },
+    "drawer_close": {
+      "native_train": 66,
+      "internal_train": 59,
+      "internal_dev": 7,
+      "native_val_formal": 18
+    }
+  },
+  "drawer_camera_pose": [
+    [
+      0.8090169429779053,
+      1.2246471172829639e-16,
+      0.5877853631973267,
+      -1.6180340051651
+    ],
+    [
+      -9.907602770712682e-17,
+      1.0,
+      -7.198295097025898e-17,
+      1.9815201570958424e-16
+    ],
+    [
+      -0.5877853631973267,
+      -6.617444900424222e-24,
+      0.8090169429779053,
+      1.1755704879760742
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "drawer_scene_camera_rows": 286,
+  "drawer_scene_base_rows": 286,
+  "drawer_exact_paired_camera_rows": 9435,
+  "drawer_exact_paired_base_rows": 9435,
+  "source_point_score_fields_read": 0,
+  "source_point_score_fields_in_output": 0,
+  "negative_augmentation": "downstream faithful_common: (-dir1, same dir2) -> 0",
+  "formal_or_test_trajectory_content_opened": 0
+}

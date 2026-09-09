@@ -1,0 +1,6 @@
+archive_prefix	compressed_size	parts	source_files	source_role
+partnet-mobility	2.6G	2	414224	shared original PartNet-Mobility assets
+flowbot3d-custom	369M	1	22765	regenerable FlowBot3D training cache
+where2act-four-task	10.8G	6	105476	four-task door/drawer trajectory datasets, excluding logs and download caches
+articubot-assets	3.4G	2	26029	valid parsed objects and official high/low-level weights
+pa3ff-compact-source	74M	1	10	compact source for regenerating the PA3FF V4 feature cache

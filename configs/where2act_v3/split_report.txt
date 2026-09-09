@@ -1,0 +1,50 @@
+====================================================================================================
+WHERE2ACT V3 CLEAN SPLIT FREEZE
+====================================================================================================
+split version          : where2act_v3_shape_holdout_v1
+seed                   : 42
+dev ratio              : 0.1
+
+SHAPES
+  raw shapes           : 240
+  static shapes        : 248
+  union dataset shapes : 248
+  formal shapes        : 50
+  nonformal shapes     : 198
+  train shapes         : 178
+  dev shapes           : 20
+
+RAW DOOR-CLOSE TRAJECTORIES
+  train                : 19560
+  dev                  : 2389
+  formal excluded      : 6780
+
+STATIC DOOR-OPEN FILES
+  train                : 27513
+  dev                  : 2991
+  formal excluded      : 8905
+
+STAGE-SPECIFIC SHAPE COUNTS
+  raw train shapes     : 171
+  raw dev shapes       : 19
+  static train shapes  : 178
+  static dev shapes    : 20
+
+HARD LEAKAGE CHECK
+  train ∩ formal       : 0
+  dev ∩ formal         : 0
+  train ∩ dev          : 0
+
+FORMAL HOLDOUT
+  targets              : 56
+  unique shapes        : 50
+
+FILES
+  /home/feng/robot_baselines/configs/where2act_v3/formal_holdout_shapes.txt
+  /home/feng/robot_baselines/configs/where2act_v3/formal_holdout_targets.tsv
+  /home/feng/robot_baselines/configs/where2act_v3/train_shapes.txt
+  /home/feng/robot_baselines/configs/where2act_v3/dev_shapes.txt
+  /home/feng/robot_baselines/configs/where2act_v3/split_manifest.json
+  /home/feng/robot_baselines/configs/where2act_v3/SHA256SUMS
+
+V3 CLEAN SPLIT: PASS

@@ -1,0 +1,52 @@
+[
+  {
+    "shape_id": "23372",
+    "link_name": "link_3",
+    "category": "Table"
+  },
+  {
+    "shape_id": "10620",
+    "link_name": "link_1",
+    "category": "Refrigerator"
+  },
+  {
+    "shape_id": "102384",
+    "link_name": "link_0",
+    "category": "Safe"
+  },
+  {
+    "shape_id": "48063",
+    "link_name": "link_1",
+    "category": "StorageFurniture"
+  },
+  {
+    "shape_id": "32086",
+    "link_name": "link_1",
+    "category": "Table"
+  },
+  {
+    "shape_id": "10489",
+    "link_name": "link_2",
+    "category": "Refrigerator"
+  },
+  {
+    "shape_id": "102387",
+    "link_name": "link_0",
+    "category": "Safe"
+  },
+  {
+    "shape_id": "49188",
+    "link_name": "link_1",
+    "category": "StorageFurniture"
+  },
+  {
+    "shape_id": "12054",
+    "link_name": "link_0",
+    "category": "Refrigerator"
+  },
+  {
+    "shape_id": "102418",
+    "link_name": "link_0",
+    "category": "Safe"
+  }
+]

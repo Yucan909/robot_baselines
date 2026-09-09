@@ -1,0 +1,118 @@
+{
+  "schema": "pa3ff_padp_demo_v3_initial_state_aligned_fourtask",
+  "source_root": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask",
+  "output_root": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask",
+  "change": "initial_robot_proprioception only: operation-start qpos -> frozen pre-action HOME qpos",
+  "method_reason": "align current agent state q_t with initial observation and formal inference start state",
+  "formal_success_metrics_used": false,
+  "formal_or_test_trajectory_fields_used": false,
+  "affordance_fields_used": false,
+  "home_qpos": [
+    0.0,
+    -0.44999998807907104,
+    0.0,
+    -2.3499999046325684,
+    0.0,
+    1.899999976158142,
+    0.800000011920929,
+    0.03999999910593033,
+    0.03999999910593033
+  ],
+  "files": {
+    "door_open/train": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/door_open_train_v2.npz",
+      "source_sha256": "caaee7de13e8fb5810ebffee5d474a847a4aa1db8de226f10b1aa507c58d5041",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/door_open_train_v3.npz",
+      "output_sha256": "287544e5d23acd72261a761947204a4278d56ebbf85fb025b6f3212aebcde058",
+      "rows": 15669,
+      "old_distance_to_home_median": 0.0,
+      "old_exact_home_fraction": 1.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "door_open/dev": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/door_open_dev_v2.npz",
+      "source_sha256": "1fbf5cb5f515f16cbba1ad7db65206b8462c29e39e8be5851b209627847d1bdf",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/door_open_dev_v3.npz",
+      "output_sha256": "9ba986914fea9110817f2af5ec829304cf03ddc5342d032d8f7aa7acbcdbe2be",
+      "rows": 1863,
+      "old_distance_to_home_median": 0.0,
+      "old_exact_home_fraction": 1.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "door_close/train": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/door_close_train_v2.npz",
+      "source_sha256": "3a2b1a48297646006d984d4e6d846bfc0c9a42013f67671117081643ee8921e9",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/door_close_train_v3.npz",
+      "output_sha256": "efa4237510946c0df75d05dc12c61555e5c0d4c28aca848f258c4ee5d45e03f9",
+      "rows": 19105,
+      "old_distance_to_home_median": 2.8218252705307614,
+      "old_exact_home_fraction": 0.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "door_close/dev": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/door_close_dev_v2.npz",
+      "source_sha256": "2c3416a4e2a2453b65cf86862b4ffc689574f50287c849950b6d0ad598f7c373",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/door_close_dev_v3.npz",
+      "output_sha256": "244c1ddce7c6920f2c5a928358e04dd857ba45880aa52fb8e3620d8a84df2342",
+      "rows": 2242,
+      "old_distance_to_home_median": 2.878001519076752,
+      "old_exact_home_fraction": 0.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "drawer_open/train": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/drawer_open_train_v2.npz",
+      "source_sha256": "31b2537014dc53980597280e22fb5d329aa441fbaf7e34a810ca8af49f20218b",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/drawer_open_train_v3.npz",
+      "output_sha256": "6350156cb70109b6f919bf64b5333c1ef7a960ed672513073d1104cc48efca2d",
+      "rows": 13456,
+      "old_distance_to_home_median": 2.519676376128514,
+      "old_exact_home_fraction": 0.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "drawer_open/dev": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/drawer_open_dev_v2.npz",
+      "source_sha256": "a259007f31d7f9df0c9a183f1f3cc99604d210ebba0e0a71b78dcf3354bf60e1",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/drawer_open_dev_v3.npz",
+      "output_sha256": "386c17352303c501df74264b33b7cfc5d8d34f2c350c18d179d3402697580bbd",
+      "rows": 157,
+      "old_distance_to_home_median": 2.328576044320692,
+      "old_exact_home_fraction": 0.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "drawer_close/train": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/drawer_close_train_v2.npz",
+      "source_sha256": "0c21baa2cfd473c308b8b3ef4bd8459e354b252f2e99fb5538402550d7f9bc21",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/drawer_close_train_v3.npz",
+      "output_sha256": "1752713f5480411fec084044614787ba711f8995f167847ade3ea67096569aa1",
+      "rows": 9074,
+      "old_distance_to_home_median": 2.377525359363501,
+      "old_exact_home_fraction": 0.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    },
+    "drawer_close/dev": {
+      "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/drawer_close_dev_v2.npz",
+      "source_sha256": "0e82a6cc0c6fb917c0430fbe08030f8a6fe6fd12f49bf6e33d27518419bd11a5",
+      "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/drawer_close_dev_v3.npz",
+      "output_sha256": "8db178527af9c03f8fab0e9ed1c65253c1f19b571c843dd51c2463cef74c24fc",
+      "rows": 30,
+      "old_distance_to_home_median": 2.257767382762407,
+      "old_exact_home_fraction": 0.0,
+      "new_exact_home_fraction": 1.0,
+      "all_nonconditioning_arrays_equal": true
+    }
+  },
+  "action_normalization": {
+    "source": "/home/feng/robot_baselines/results/pa3ff/padp_data_v2p1_fixonly_fourtask/ACTION_NORMALIZATION_V2.npz",
+    "source_sha256": "494d4fbb222d28b8db6e7d38f9f8e70b533f9601db1b0a45ad7b8ca3f824a35e",
+    "output": "/home/feng/robot_baselines/results/pa3ff/padp_data_v3_initial_state_aligned_fourtask/ACTION_NORMALIZATION_V3.npz",
+    "output_sha256": "494d4fbb222d28b8db6e7d38f9f8e70b533f9601db1b0a45ad7b8ca3f824a35e",
+    "all_arrays_equal": true
+  }
+}

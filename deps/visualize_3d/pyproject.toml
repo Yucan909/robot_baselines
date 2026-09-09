@@ -1,0 +1,49 @@
+[project]
+name = "rpad-visualize-3d"
+version = "0.1.0"
+description = "Tools for visualizing 3D stuff."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { file = "LICENSE.txt" }
+authors = [{ email = "baeisner@andrew.cmu.edu", name = "Ben Eisner" }]
+dependencies = ["dominate", "matplotlib", "numpy", "plotly"]
+
+[build-system]
+requires = ["setuptools >= 62.3.2,<63", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+develop = [
+  "autoflake",
+  "black == 23.7.0",
+  "isort",
+  "jupyterlab",
+  "mypy",
+  "pandas",
+  "pre-commit",
+  "pylint",
+  "pytest",
+]
+build_docs = ["mkdocs-material", "mkdocstrings[python]"]
+
+# Make setuptools only look in the src folder.
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rpad = ["py.typed"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+warn_return_any = true
+warn_unused_configs = true
+mypy_path = "src"
+namespace_packages = true
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = ["plotly.*", "dominate.*"]
+ignore_missing_imports = true

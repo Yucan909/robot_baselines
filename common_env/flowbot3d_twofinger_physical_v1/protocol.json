@@ -1,0 +1,37 @@
+{
+  "protocol_version": "flowbot3d_twofinger_physical_v1",
+  "high_level_method": "FlowBot3D ArtFlowNet",
+  "robot": "ArticuBot Franka Panda parallel-jaw gripper",
+  "interaction": "physical finger collision + friction only",
+  "artificial_hand_object_drive": false,
+  "target_identity_given": true,
+  "single_view": true,
+  "initial_progress_range": [0.10, 0.20],
+  "final_success_threshold": 0.40,
+  "pointcloud_points": 1200,
+  "pull_distance_m_per_high_level_step": 0.02,
+  "max_pull_steps": 30,
+  "pregrasp_distance_m": 0.08,
+  "grasp_success_definition": {
+    "source": "SAPIEN scene.get_contacts() physical contacts",
+    "left_and_right_target_contact_required": true,
+    "settle_steps": 300,
+    "tail_steps": 100,
+    "minimum_bilateral_contact_fraction_in_tail": 0.50,
+    "nonzero_contact_impulse_required": true
+  },
+  "post_pull_grasp_loss_definition": {
+    "monitor_steps": 50,
+    "failure_if_no_effective_target_contact_from_either_finger": true
+  },
+  "finger_material": {
+    "static_friction": 1.0,
+    "dynamic_friction": 1.0,
+    "restitution": 0.0
+  },
+  "metrics": [
+    "grasp_success_rate",
+    "post_grasp_operation_success_rate",
+    "final_success_rate"
+  ]
+}

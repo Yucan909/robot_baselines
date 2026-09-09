@@ -1,0 +1,10 @@
+[
+  {"task": "door_open", "target_index": 12, "trial_index": 15},
+  {"task": "door_open", "target_index": 33, "trial_index": 15},
+  {"task": "door_close", "target_index": 35, "trial_index": 7},
+  {"task": "door_close", "target_index": 35, "trial_index": 14},
+  {"task": "drawer_open", "target_index": 33, "trial_index": 11},
+  {"task": "drawer_open", "target_index": 31, "trial_index": 2},
+  {"task": "drawer_close", "target_index": 29, "trial_index": 2},
+  {"task": "drawer_close", "target_index": 29, "trial_index": 12}
+]

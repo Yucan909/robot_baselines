@@ -1,0 +1,243 @@
+{
+  "source": "official ArticuBot diverse_objects.zip",
+  "object_id": "40147",
+  "official_experiment": "0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first",
+  "selection": "faithful prepare_env lexicographic order, good_traj gate, first N",
+  "count": 25,
+  "selected": [
+    {
+      "trial": "2024-07-06-01-23-06",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-23-06/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-23-06/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-23-06/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-23-06/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-25-30",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-25-30/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-25-30/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-25-30/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-25-30/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-29-36",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-29-36/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-29-36/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-29-36/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-29-36/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-38-46",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-38-46/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-38-46/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-38-46/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-38-46/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-41-51",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-41-51/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-41-51/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-41-51/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-41-51/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-45-00",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-45-00/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-45-00/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-45-00/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-45-00/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-48-22",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-48-22/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-48-22/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-48-22/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-48-22/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-51-20",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-51-20/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-51-20/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-51-20/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-51-20/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-54-29",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-54-29/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-54-29/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-54-29/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-54-29/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-01-58-10",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-58-10/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-58-10/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-58-10/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-01-58-10/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-01-19",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-01-19/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-01-19/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-01-19/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-01-19/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-04-28",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-04-28/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-04-28/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-04-28/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-04-28/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-08-56",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-08-56/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-08-56/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-08-56/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-08-56/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-12-56",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-12-56/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-12-56/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-12-56/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-12-56/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-16-22",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-16-22/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-16-22/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-16-22/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-16-22/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-19-47",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-19-47/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-19-47/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-19-47/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-19-47/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-24-28",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-24-28/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-24-28/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-24-28/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-24-28/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-27-09",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-27-09/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-27-09/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-27-09/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-27-09/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-31-54",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-31-54/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-31-54/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-31-54/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-31-54/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-35-12",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-35-12/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-35-12/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-35-12/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-35-12/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-38-45",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-38-45/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-38-45/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-38-45/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-38-45/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-43-51",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-43-51/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-43-51/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-43-51/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-43-51/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-51-50",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-51-50/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-51-50/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-51-50/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-51-50/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-55-58",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-55-58/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-55-58/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-55-58/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt"
+      ]
+    },
+    {
+      "trial": "2024-07-06-02-59-12",
+      "files": [
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-59-12/task_config.yaml",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-59-12/grasp_the_handle_of_the_storage_furniture_door_primitive/states/state_0.pkl",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-59-12/grasp_the_handle_of_the_storage_furniture_door_primitive/opened_angle.txt",
+        "open_the_door_40147/task_open_the_door_of_the_storagefurniture_by_its_handle/experiment/0705-diverse-objects-vary-obj-loc-ori-init-angle-robot-init-joint-near-handle-300-demo-0.4-0.15-translation-first/2024-07-06-02-59-12/grasp_the_handle_of_the_storage_furniture_door_primitive/label.json"
+      ]
+    }
+  ],
+  "rejected_before_cutoff": [
+    {
+      "trial": "2024-07-06-01-35-03",
+      "reason": "label_good_traj_false"
+    },
+    {
+      "trial": "2024-07-06-02-47-17",
+      "reason": "label_good_traj_false"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "protocol": "where2act_four_task_train_v7_noaff_schema_robust",
+  "run_root": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913",
+  "formal_or_test_rollout_used": false,
+  "tasks": {
+    "door_open": {
+      "index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/door_open_index_v7_noaff_schema_robust.npz",
+      "index_sha256": "74f231c434b64cf246c41f3374463495f4cbece6c30839ce1e3be7c459032d00",
+      "critic": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_open/critic/best-network.pth",
+      "critic_sha256": "c9c4237bb403069d5665f5930ed2c543933f913ceb8a94c98ce80ac4a00f8621",
+      "joint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_open/joint/best-network.pth",
+      "joint_sha256": "2378ebe1962869984173e4cd839b4ed1763ea1c4f30de8693227ac4037c21f67"
+    },
+    "door_close": {
+      "index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/door_close_index_v7_noaff_schema_robust.npz",
+      "index_sha256": "58589594c2b1f83d189ce5dd112dd9e53ba33df49dc371553e2125abbf1d98e7",
+      "critic": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_close/critic/best-network.pth",
+      "critic_sha256": "b2b7c94f61059038d0d8eae924f9321d66a220be56071c4c58159400bbaa5b54",
+      "joint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/door_close/joint/best-network.pth",
+      "joint_sha256": "cc6951931acde4b371657412c983767a341e4aeef49e39a3af1e220fd21a3f49"
+    },
+    "drawer_open": {
+      "index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/drawer_open_index_v7_noaff_schema_robust.npz",
+      "index_sha256": "999d4cdbfa03bf3fea8897726e32e3e9fb860fe187adf9e06c656ab7203c4b67",
+      "critic": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_open/critic/best-network.pth",
+      "critic_sha256": "8f112c8f398c9ad8c7628b9b2623cec8a0e3384629bf5b5e0c79aaecaf01975b",
+      "joint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_open/joint/best-network.pth",
+      "joint_sha256": "f6e39663b1e13a205e90fbd4e40d6de1e1ce4ccee4c99781027cdb69636ca9c9"
+    },
+    "drawer_close": {
+      "index": "/home/feng/robot_baselines/results/where2act/four_task_train_v7_noaff_schema_robust_indices/drawer_close_index_v7_noaff_schema_robust.npz",
+      "index_sha256": "bc2833e1af7f4aef520ed61bad4938a0d8ec67201fc91a2a284bc75d64261db4",
+      "critic": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_close/critic/best-network.pth",
+      "critic_sha256": "ab28695efc9a50ac016d61eefa77542034567a929f4619d7c4b3d64c976527a4",
+      "joint": "/home/feng/robot_baselines/repos/where2act/logs/four_task_train_v7_noaff_schema_robust/20260905_032913/drawer_close/joint/best-network.pth",
+      "joint_sha256": "b6af721bddfa6488ec599fc467d9a0f1c4225e62dc9b03d167d6b3b59c364352"
+    }
+  }
+}

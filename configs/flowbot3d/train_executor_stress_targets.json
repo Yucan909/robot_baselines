@@ -1,0 +1,122 @@
+[
+  {
+    "shape_id": "102301",
+    "link_name": "link_0",
+    "category": "Safe",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "103521",
+    "link_name": "link_0",
+    "category": "WashingMachine",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "12248",
+    "link_name": "link_1",
+    "category": "Refrigerator",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "27267",
+    "link_name": "link_0",
+    "category": "Table",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "7310",
+    "link_name": "link_0",
+    "category": "Microwave",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "47742",
+    "link_name": "link_0",
+    "category": "StorageFurniture",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "102309",
+    "link_name": "link_0",
+    "category": "Safe",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "103361",
+    "link_name": "link_0",
+    "category": "WashingMachine",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "10685",
+    "link_name": "link_1",
+    "category": "Refrigerator",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "31249",
+    "link_name": "link_3",
+    "category": "Table",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "7304",
+    "link_name": "link_1",
+    "category": "Microwave",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "45594",
+    "link_name": "link_0",
+    "category": "StorageFurniture",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "102389",
+    "link_name": "link_16",
+    "category": "Safe",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "103778",
+    "link_name": "link_0",
+    "category": "WashingMachine",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "10751",
+    "link_name": "link_2",
+    "category": "Refrigerator",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "32566",
+    "link_name": "link_0",
+    "category": "Table",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "45661",
+    "link_name": "link_0",
+    "category": "StorageFurniture",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "101605",
+    "link_name": "link_0",
+    "category": "Safe",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "103775",
+    "link_name": "link_0",
+    "category": "WashingMachine",
+    "joint_type": "revolute"
+  },
+  {
+    "shape_id": "10627",
+    "link_name": "link_2",
+    "category": "Refrigerator",
+    "joint_type": "revolute"
+  }
+]

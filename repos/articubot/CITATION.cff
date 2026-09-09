@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wang"
+  given-names: "Yufei"
+- family-names: "Wang"
+  given-names: "Ziyu"
+- family-names: "Nakura"
+  given-names: "Mino"
+- family-names: "Bhowal"
+  given-names: "Pratik"
+- family-names: "Kuo"
+  given-names: "Chia-Liang"
+- family-names: "Chen"
+  given-names: "Yi-Ting Chen"
+- family-names: "Erickson"
+  given-names: "Zackory"
+- family-names: "Held"
+  given-names: "David"
+title: "ArticuBot: Learning Universal Articulated Object Manipulation Policy via Large Scale Simulation"
+version: 1.0.0
+date-released: 2025-07-08
+url: "https://github.com/yufeiwang63/ArticuBot"

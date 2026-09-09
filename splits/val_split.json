@@ -1,0 +1,795 @@
+{
+  "generated_by": "run_postprocess_pipeline.py",
+  "ids": [
+    "103369",
+    "11712",
+    "12036",
+    "12042",
+    "12249",
+    "22433",
+    "33810",
+    "41004",
+    "45007",
+    "45130",
+    "45162",
+    "45173",
+    "45212",
+    "45244",
+    "45249",
+    "45267",
+    "45397",
+    "45504",
+    "45505",
+    "45523",
+    "45622",
+    "45632",
+    "45645",
+    "45687",
+    "45783",
+    "45853",
+    "45915",
+    "45984",
+    "46166",
+    "46199",
+    "46408",
+    "46417",
+    "46616",
+    "46700",
+    "46732",
+    "46847",
+    "46856",
+    "46859",
+    "47099",
+    "47254",
+    "47514",
+    "47577",
+    "47853",
+    "47944",
+    "48177",
+    "48513",
+    "48797",
+    "48855",
+    "7167",
+    "7366"
+  ],
+  "objects": {
+    "103369": {
+      "category": "WashingMachine",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_224749"
+    },
+    "11712": {
+      "category": "Refrigerator",
+      "links": [
+        "link_0",
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        },
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_215805"
+    },
+    "12036": {
+      "category": "Refrigerator",
+      "links": [
+        "link_0",
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        },
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_223301"
+    },
+    "12042": {
+      "category": "Refrigerator",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_223355"
+    },
+    "12249": {
+      "category": "Refrigerator",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_223241"
+    },
+    "22433": {
+      "category": "Table",
+      "links": [
+        "link_0",
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        },
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_211510"
+    },
+    "33810": {
+      "category": "Table",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_210946"
+    },
+    "41004": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_200822"
+    },
+    "45007": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_194857"
+    },
+    "45130": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_204347"
+    },
+    "45162": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_184342"
+    },
+    "45173": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_183808"
+    },
+    "45212": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_201117"
+    },
+    "45244": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_202606"
+    },
+    "45249": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_203828"
+    },
+    "45267": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_183350"
+    },
+    "45397": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_190037"
+    },
+    "45504": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_182755"
+    },
+    "45505": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_210138"
+    },
+    "45523": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_2"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_2",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_205654"
+    },
+    "45622": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_201843"
+    },
+    "45632": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_201500"
+    },
+    "45645": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_183823"
+    },
+    "45687": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_201414"
+    },
+    "45783": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_184257"
+    },
+    "45853": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_182158"
+    },
+    "45915": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_201132"
+    },
+    "45984": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_205732"
+    },
+    "46166": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_2"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_2",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_184653"
+    },
+    "46199": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_181943"
+    },
+    "46408": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_190709"
+    },
+    "46417": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_200835"
+    },
+    "46616": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_190158"
+    },
+    "46700": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_183010"
+    },
+    "46732": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0",
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        },
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_173310"
+    },
+    "46847": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_203901"
+    },
+    "46856": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_202744"
+    },
+    "46859": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_210128"
+    },
+    "47099": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_200254"
+    },
+    "47254": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_184502"
+    },
+    "47514": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_184814"
+    },
+    "47577": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_182537"
+    },
+    "47853": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0",
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        },
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_204621"
+    },
+    "47944": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_200817"
+    },
+    "48177": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_183856"
+    },
+    "48513": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_173144"
+    },
+    "48797": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_0",
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        },
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_173156"
+    },
+    "48855": {
+      "category": "StorageFurniture",
+      "links": [
+        "link_2"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_2",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_182103"
+    },
+    "7167": {
+      "category": "Microwave",
+      "links": [
+        "link_0"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_0",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_224905"
+    },
+    "7366": {
+      "category": "Microwave",
+      "links": [
+        "link_1"
+      ],
+      "selected_links": [
+        {
+          "link_name": "link_1",
+          "size": 0.75,
+          "size_tag": "0.75"
+        }
+      ],
+      "updated_at": "20260609_224852"
+    }
+  },
+  "schema_version": 2,
+  "source_id_list": "/inspire/hdd/global_user/liditao-253108110078/datasets/partnet-mobility/articu_dataset/data_analyze/final_id_list.json"
+}
